@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         
-        <title>OOSpam multiple spam filter</title>
+        <title>OOPSpam API – multiple spam filter</title>
         <style>
 
     html body {
@@ -22,7 +22,7 @@
 </style>
 
 
-<link rel="stylesheet" href="https://onaralili.comm/css/main.css">
+<link rel="stylesheet" href="https://mystifying-boyd-2ed06c.netlify.com/css/main.css">
 
 
 
@@ -84,7 +84,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">OOSpam multiple spam filter</a>
+                    <a class="navbar-brand visible-xs" href="#">OOPSpam API – multiple spam filter</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -138,16 +138,44 @@
     
 
     
-      
+    
 
-    <h4><a href="/posts/oopspamfilter/">OOSpam multiple spam filter</a></h4>
-    <h5>OOPSpam detects the likelihood of spam more accurately. It allows you to scan your content utilizing multiple machine learning based, powerful text analyzers.</h5>
-     <kbd class="item-tag">spam</kbd>  <kbd class="item-tag">spam filter</kbd>  <kbd class="item-tag">spam API</kbd> 
+    <h4><a href="/posts/oopspamfilter/">OOPSpam API – multiple spam filter</a></h4>
+    <h5>August 2, 2017</h5>
+     <kbd class="item-tag">spam filter</kbd>  <kbd class="item-tag">oopspam</kbd>  <kbd class="item-tag">spam filter API</kbd>  <kbd class="item-tag">SpamAssassin</kbd> 
 
 </div>
 
 
-    <br> <div class="text-justify"></div>
+    <br> <div class="text-justify">
+
+<p><a href="https://oopspam.com/"> <img src="/images/oopspamWebsite.png" style="margin-bottom:1em;"/> </a>
+visit <a href="https://oopspam.com/">https://oopspam.com/</a> </p>
+I was thinking about some ideas as a side-project. Well, I thought it would be nice to pass my project-based exams Mobile Applications and Cloud Computing, Human-Computer Interaction with the same idea. I came up with the idea of VirusTotal-like service but as a spam filter service. As a result, OOPSpam API came to light. After making a few research I found out there is actually well-developed solution like mine, however, the price seemed to be high. I started development by integrating a few major spam filer services such as Apache SpamAssassin and deployed the application to Heroku. Roughly, this is how it works:
+<img src="/images/oopspam.png" alt="how Oopspam works" /></p>
+
+<h3 id="so-what-is-it">So, what is it?</h3>
+
+<p>So, what is the OOPSpam API? It is a multiple spam filter service that has built-in integration with powerful machine learning and text analyzers. It takes a content as an input and sends it to various spam filter services and returns the likelihood of the content to be a spam.
+Integration is quite simple, the only thing you have to do is to send a request to</p>
+
+<pre><code class="language-url">https://oopspam.herokuapp.com 
+</code></pre>
+
+<p>with JSON object :
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{<span style="color:#f92672">&#34;text&#34;</span>:<span style="color:#e6db74">&#34;The example content!&#34;</span>}</code></pre></div></p>
+
+<p>As a result, you will be responded with JSON object as following :</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+<span style="color:#f92672">&#34;spam&#34;</span>: <span style="color:#ae81ff">2</span>,
+<span style="color:#f92672">&#34;nospam&#34;</span>: <span style="color:#ae81ff">1</span>
+}</code></pre></div>
+
+<p>As obvious it might seem It is worth to mention that <strong>spam</strong> and <strong>nospam</strong> stand for a number of services that recognized the content as a spam/not spam.</p>
+
+<p>I’m planning to integrate other providers as well to make it even accurate. The project can be helpful for the folks who want to protect users from the spam contents.</p>
+</div>
 
     
     
