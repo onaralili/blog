@@ -18,14 +18,14 @@ main {
 
 /*footer*/
 
-.copyright {
+/* .copyright {
     margin: 15px 0;
-}
+} */
 
 /*home page*/
 
 .intro {
-    margin: 25vh 0;
+    margin: 20vh 0;
 }
 
 .intro > h1 {
