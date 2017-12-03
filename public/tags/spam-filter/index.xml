@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spam Filter on Onar Alili</title>
-    <link>https://mystifying-boyd-2ed06c.netlify.com/tags/spam-filter/</link>
+    <link>https://onaralili.com/tags/spam-filter/</link>
     <description>Recent content in Spam Filter on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Aug 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mystifying-boyd-2ed06c.netlify.com/tags/spam-filter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://onaralili.com/tags/spam-filter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OOSpam multiple spam filter</title>
-      <link>https://mystifying-boyd-2ed06c.netlify.com/posts/oopspamfilter/</link>
+      <link>https://onaralili.com/posts/oopspamfilter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mystifying-boyd-2ed06c.netlify.com/posts/oopspamfilter/</guid>
+      <guid>https://onaralili.com/posts/oopspamfilter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OOPSpam API – multiple spam filter</title>
-      <link>https://mystifying-boyd-2ed06c.netlify.com/posts/oopspamfilter/</link>
+      <link>https://onaralili.com/posts/oopspamfilter/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mystifying-boyd-2ed06c.netlify.com/posts/oopspamfilter/</guid>
+      <guid>https://onaralili.com/posts/oopspamfilter/</guid>
       <description>visit https://oopspam.com/ I was thinking about some ideas as a side-project. Well, I thought it would be nice to pass my project-based exams Mobile Applications and Cloud Computing, Human-Computer Interaction with the same idea. I came up with the idea of VirusTotal-like service but as a spam filter service. As a result, OOPSpam API came to light. After making a few research I found out there is actually well-developed solution like mine, however, the price seemed to be high.</description>
     </item>
     
