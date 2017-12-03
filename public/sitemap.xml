@@ -7,6 +7,10 @@
   </url>
   
   <url>
+    <loc>https://mystifying-boyd-2ed06c.netlify.com/projects/splitup/</loc>
+  </url>
+  
+  <url>
     <loc>https://mystifying-boyd-2ed06c.netlify.com/posts/oopspamfilter/</loc>
     <lastmod>2017-08-02T00:00:00+00:00</lastmod>
   </url>
@@ -24,6 +28,26 @@
   
   <url>
     <loc>https://mystifying-boyd-2ed06c.netlify.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-boyd-2ed06c.netlify.com/tags/chrome/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-boyd-2ed06c.netlify.com/tags/chrome-browser/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-boyd-2ed06c.netlify.com/tags/chrome-extension/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-boyd-2ed06c.netlify.com/tags/chrome-plugin/</loc>
     <priority>0</priority>
   </url>
   
@@ -48,6 +72,11 @@
   <url>
     <loc>https://mystifying-boyd-2ed06c.netlify.com/posts/</loc>
     <lastmod>2017-08-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-boyd-2ed06c.netlify.com/tags/productivity/</loc>
     <priority>0</priority>
   </url>
   
