@@ -33,11 +33,12 @@ We will go through security features of Encrypted Key Exchange (EKE) and SRP and
 ## The SRP integrations
 
 **Telnet**
+
 In order to avoid eavesdropping attacks, SRP has been implemented into Telnet protocol. SRP is used to prevent sending passwords in a plaintext. The SRP improves security by against:
 Password sniffing attacks, meaning if the attacker listening to the network cannot see the password over the network
 Dictionary attacks, it would take a huge computational time to even start trying to break the password.
 SRP requires no certifications, keyrings etc. which makes it simple to understand and implement.
-SRP Telnet package is realized as a Telnet authentication option. The SRP authentication provides automatic negotiation and in case both sides support SRP, they will try to authenticate. Otherwise, the authentication protocol downgrades to another mechanism that both participants support. The implementation enables users to command with standard commandline commands such as telnet ipaddress instead of using some specific authentication commands such as ssh or kinit. The password will be provided as usual after telnet IPaddress command and the secure session will be established. A simple secure authentication will look like following:
+SRP Telnet package is realized as a Telnet authentication option. The SRP authentication provides automatic negotiation and in case both sides support SRP, they will try to authenticate. Otherwise, the authentication protocol downgrades to another mechanism that both participants support. The implementation enables users to command with standard commandline commands such as *telnet ipaddress* instead of using some specific authentication commands such as ssh or kinit. The password will be provided as usual after telnet IPaddress command and the secure session will be established. A simple secure authentication will look like following:
 ```
 $ telnet 217.23.23.93
 Trying 217.23.23.93...
@@ -49,9 +50,12 @@ SRP Password:         (Password is typed locally)
 [ SRP authentication successful ]
 ```
 **SSH**
+
 SSH is a tool that enables to log in and runs commands on a remote server. SSH employees RSA public key exchange to ensure a secure connection. Even though SSH consider secure it has implementation problems as well as it sends passwords via a secure connection. The latter one leads to the issue when one of the participants is being compromised. The attacker can listen to incoming traffic and capture incoming passwords and try them
 on different machines. This is where SRP plays a great role to force security even a server is being hacked. Since in SRP one cannot obtain information about the password. As we mentioned SSH uses RSA and it is a patented method, therefore, license required. However, the SRP can provide a secure connection to SSH even without having RSA implementation.
+
 **TLS**
+
 As SSH, TLS utilizes public-key cryptography. Nowadays, services authenticate users via username and passwords. TLS doesn’t fit well with this idea. Hence, using the SRP protocol provides secure connection using username and password over an insecure network and avoids from an eavesdropper. The SRP is implemented using the standard handshake message exchange protocol. The exchange goes as follows:
 1. Client sends "Client Hello" message to the Server
 2. The Server sends "Server Hello"  and Certificate,
@@ -63,6 +67,7 @@ and "Finished’ messages to notify finalized exchange.
 Both sides start exchanging Application Data.
 
 ## The SRP implementation and OpenSSL
+
 In this section, we are going to play around OpenSSL SRP support. As we mentioned above discussion one of the important part of the SRP is verifier. First, we start creating the server verifier file running OpenSSL SRP. As we can see from the guide, -gn command is used to provide g and N values which are required for a verifier, just like [DH key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange). Given a large enough g and N and output file name (pwd.srpv), we run following command:
 ```OpenSSL SRP -srpvfile pwd.srpv -add -gn 1536 onar```
 After this, the system asks us password twice, after entering and verifying the password the system generates the verifier. It is worth to mention that pwd.srpv has to exist in the file system. Now, we created the verifier and it is ready to load to the server. Using OpenSSL type *SRP_VBASE* to store and utilize the verifier.
