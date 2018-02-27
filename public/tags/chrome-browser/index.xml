@@ -2,20 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chrome Browser on Onar Alili</title>
-    <link>https://onaralili.com/tags/chrome-browser/</link>
+    <link>http://localhost:1313/tags/chrome-browser/</link>
     <description>Recent content in Chrome Browser on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 03 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://onaralili.com/tags/chrome-browser/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/chrome-browser/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SplitUp! - open multiple tabs in a new window </title>
-      <link>https://onaralili.com/projects/splitup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/projects/splitup/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/projects/splitup/</guid>
+      <guid>http://localhost:1313/projects/splitup/</guid>
       <description></description>
     </item>
     
