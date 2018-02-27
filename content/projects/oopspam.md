@@ -5,4 +5,5 @@ url: "/posts/oopspamfilter/" # delete this line if you want blog-like posts for 
 tags: ["spam", "spam filter", "spam API"]
 weight: 1
 draft: false
+date: 2017-07-02
 ---
