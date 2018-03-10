@@ -11,7 +11,7 @@ I was thinking about some ideas as a side-project. Well, I thought it would be n
 
 ### So, what is it?
 
-So, what is the OOPSpam API? It is a multiple spam filter service that has built-in integration with powerful machine learning and text analyzers. It takes a content as an input and sends it to various spam filter services and returns the likelihood of the content to be a spam.
+It is a multiple spam filter service that has built-in integration with powerful machine learning and text analyzers. It takes a content as an input and sends it to various spam filter services and returns the likelihood of the content to be a spam.
 Integration is quite simple, the only thing you have to do is to send a request to
 ```url
 https://oopspam.herokuapp.com 
