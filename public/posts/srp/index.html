@@ -187,9 +187,9 @@ Dictionary attacks, it would take a huge computational time to even start trying
 SRP requires no certifications, keyrings etc. which makes it simple to understand and implement.
 SRP Telnet package is realized as a Telnet authentication option. The SRP authentication provides automatic negotiation and in case both sides support SRP, they will try to authenticate. Otherwise, the authentication protocol downgrades to another mechanism that both participants support. The implementation enables users to command with standard commandline commands such as <em>telnet ipaddress</em> instead of using some specific authentication commands such as ssh or kinit. The password will be provided as usual after telnet IPaddress command and the secure session will be established. A simple secure authentication will look like following:</p>
 
-<pre><code>$ telnet 217.23.23.93
-Trying 217.23.23.93...
-Connected to 217.23.23.93
+<pre><code>$ telnet 217.x.x.x
+Trying 217.x.x.x...
+Connected to 217.x.x.x
 Escape character is ’^]’.
 [ Trying SRP ... ]
 [ Using 1024-bit modulus for ’tjw’ ]

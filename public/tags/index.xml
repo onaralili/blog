@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Browser</title>
+      <link>http://localhost:1313/tags/browser/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/browser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Chrome</title>
       <link>http://localhost:1313/tags/chrome/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
@@ -66,6 +75,15 @@
     </item>
     
     <item>
+      <title>Extension</title>
+      <link>http://localhost:1313/tags/extension/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/extension/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hackathon</title>
       <link>http://localhost:1313/tags/hackathon/</link>
       <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
@@ -80,6 +98,15 @@
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/key-exchange/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Malicious Extension</title>
+      <link>http://localhost:1313/tags/malicious-extension/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/malicious-extension/</guid>
       <description></description>
     </item>
     
