@@ -53,11 +53,11 @@ Boom! this is it! As you see the code checks if a user has been using the extens
 As expected, the extension started to make an HTTP request to an external source and downloaded a 665KB javascript file which instructs the extension to inject ads, steal and set cookies and so on.
 ![malicious http request by the extension](/images/httprequest.png)
 It is 10913 lines code inside the file and I am not going to into details, a few interesting points are a huge amount of HTTP request and new javascript files are being downloaded based on the website user visits. They made sure that sure will have a native ads experience on every page, hence in every website a new instruction is being downloaded. Every click is recorded in cookies and also send to remote URL. The huge number of websites are covered, from Russian email services mail.ru, yandex.ru to almost all social networks, search engines etc.
-![url check for facebook](/images/fb.png)
-<br>
+![url check for facebook](/images/fb.png)  
+
 In case a user is on the bitconnect registration form
-![registration form](/images/registration.png)
-<br>
+![registration form](/images/registration.png)  
+
 It seems like some domains are ignored such as paypal, google drive and .gov domains.
 ![ignored domains](/images/ignoredDomains.png)
 ## Conclusion
