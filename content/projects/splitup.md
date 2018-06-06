@@ -1,6 +1,6 @@
 ---
-title: "SplitUp! - open multiple tabs in a new window "
-description: "This is a Google Chrome extension to separate one or many tabs into a different window. I developed SplitUp! in a day for my own purposes, it is handy when I'm studying and opened tons of websites and here the extension makes life easier. Just choosing from the list and splitting some websites into a different window."
+title: "SplitUp! - a tab manager for Google Chrome extension"
+description: "This is a Google Chrome extension to manage tabs. Following features are supported: multiscreen, export tabs, close tabs and move tabs between windows, save sessions to access them later, split some tabs into a different window and many mmore.
 tags: ["chrome-extension", "chrome-browser", "chrome","chrome-plugin", "productivity"]
 repo: "SplitUp"
 weight: 1
