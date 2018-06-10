@@ -52,14 +52,18 @@ Boom! this is it! As you see the code checks if a user has been using the extens
 ### Request to the dark side
 As expected, the extension started to make an HTTP request to an external source and downloaded a 665KB javascript file which instructs the extension to inject ads, steal and set cookies and so on.
 ![malicious http request by the extension](/images/httprequest.png)
-It is 10913 lines code inside the file and I am not going to into details, a few interesting points are a huge amount of HTTP request and new javascript files are being downloaded based on the website user visits. They made sure that sure will have a native ads experience on every page, hence in every website a new instruction is being downloaded. Every click is recorded in cookies and also send to remote URL. The huge number of websites are covered, from Russian email services mail.ru, yandex.ru to almost all social networks, search engines etc.
-![url check for facebook](/images/fb.png)  
+It is 10913 lines code inside the file and I am not going to into details, a few interesting points are a huge amount of HTTP request and new javascript files are being downloaded based on the website user visits. They made sure that user will have a native ads experience on every page, hence in every website a new instruction is being downloaded. Every click is recorded in cookies and also send to remote URL. The huge number of websites are covered, from Russian email services mail.ru, yandex.ru to almost all social networks, search engines etc.
 
-In case a user is on the bitconnect registration form it injects ads to the form 
-![registration form](/images/registration.png)  
+![url check for facebook](/images/fb.png)
 
-It seems like some domains are ignored such as paypal, google drive and .gov domains. 
+In case a user is on the bitconnect registration form it injects ads to the form
+
+![registration form](/images/registration.png)
+
+It seems like some domains are ignored such as paypal, google drive and .gov domains.
+
 ![ignored domains](/images/ignoredDomains.png)
+
 ## Conclusion
 Unfortunately, these days some developers sell their extension after it gains popularity. This is a huge risk since already downloaded extension will get updated with malicious code without user's contest. It has been showing that Chrome Web Store automatic code check is not perfect for detecting this kind of malicious behaviors. The best solution seems to be conscious and use extensions that are come from a reliable source or open-source. Although, this extension was an open-source project and it still managed to inject people's browser activities.
 
