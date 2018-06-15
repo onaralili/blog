@@ -5,6 +5,7 @@ tags: ["chrome", "extension", "browser", "malicious extension"]
 draft: false
 ---
 *This is a short story and malware analysis of a chrome extension that served people well then the developer sell it to the malicious advertisement company.*
+
 ### Discovery
 As you may know, recently I have published an extension (yes! one more tab manager for the world) [SplitUp! - Tab Manager](https://chrome.google.com/webstore/detail/splitup-tab-manager/bhoodecbejheonelhikcfahgpgahffmf). I was looking for a way to improve it and Chrome Web Store is a great place to see other extensions to get inspired for new ideas. I searched "tab manager" to get a general list, then I saw this extension with 50K+ users, well the name of the extension wasn't so hard to guess "Tab Manager" 🤔 but I guess this is what people search.
 ![Tab Manager extension screenshot on web store](/images/screenshot.png)
@@ -66,5 +67,7 @@ It seems like some domains are ignored such as paypal, google drive and .gov dom
 
 ## Conclusion
 Unfortunately, these days some developers sell their extension after it gains popularity. This is a huge risk since already downloaded extension will get updated with malicious code without user's contest. It has been showing that Chrome Web Store automatic code check is not perfect for detecting this kind of malicious behaviors. The best solution seems to be conscious and use extensions that are come from a reliable source or open-source. Although, this extension was an open-source project and it still managed to inject people's browser activities.
+
+__The extension has been reported and being removed from the Web Store.__
 
 
