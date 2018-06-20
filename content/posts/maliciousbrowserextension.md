@@ -3,6 +3,7 @@ title: "How a chrome extension turned to the Dark Side"
 date: 2018-05-14
 tags: ["chrome", "extension", "browser", "malicious extension"]
 draft: false
+repo: "https://www.onaralili.com/posts/maliciousbrowserextension"
 ---
 *This is a short story and malware analysis of a chrome extension that served people well then the developer sell it to the malicious advertisement company.*
 

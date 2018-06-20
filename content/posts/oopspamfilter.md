@@ -3,6 +3,7 @@ title: "OOPSpam API multiple spam filter"
 date: 2017-08-02
 tags: ["spam filter", "oopspam", "spam filter API", "SpamAssassin"]
 draft: false
+repo: "https://www.onaralili.com/posts/oopspamfilter"
 ---
 <a href="https://oopspam.com/"> <img src="/images/oopspamWebsite.png" style="margin-bottom:1em;"/> </a>
 visit https://oopspam.com/ </p>

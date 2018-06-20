@@ -3,6 +3,7 @@ title: "What is The Secure Remote Password (SRP) protocol?"
 date: 2018-02-27
 tags: ["SRP", "Secure Remote Password", "key exchange", "security", "cryptography"]
 draft: false
+repo: "https://www.onaralili.com/posts/srp"
 ---
 I have decided to publish materials I wrote for my Computer and Network Security course. It could help someone out there, so why keep it on my hard drive.
 You can obviously get shorter and straightforward information from following Wikipedia page.

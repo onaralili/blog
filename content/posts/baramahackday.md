@@ -3,6 +3,7 @@ title: "1st Place Winner of Barama HackDay"
 date: 2016-03-15
 tags: ["hackathon", "barama"]
 draft: false
+repo: "https://www.onaralili.com/posts/baramahackday"
 ---
 
 A few weeks ago Azercell’s Barama Innovation Center announced 36 hours hackathon which took place on 10 March 2016. I as a team leader with my two teammates from work decided to team up and participate. 12 March was the first day of the competition, the topic of the hackathon was “Food Industry”. After 36 
