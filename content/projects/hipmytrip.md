@@ -6,4 +6,5 @@ tags: ["map", "travel-map"]
 weight: 1
 draft: false
 date: 2018-05-03
+repo: "https://hipmytrip.com/"
 ---
