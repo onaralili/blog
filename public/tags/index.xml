@@ -111,6 +111,15 @@
     </item>
     
     <item>
+      <title>Map</title>
+      <link>http://localhost:1313/tags/map/</link>
+      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/map/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Oopspam</title>
       <link>http://localhost:1313/tags/oopspam/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
@@ -197,6 +206,15 @@
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/srp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travel Map</title>
+      <link>http://localhost:1313/tags/travel-map/</link>
+      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/travel-map/</guid>
       <description></description>
     </item>
     
