@@ -1,6 +1,6 @@
 [onaralili.com](https://www.onaralili.com/)
 
-Powered by [Hugo](https://gohugo.io/), theme [Minimal](https://github.com/calintat/minimal) with some modifications.
+Powered by [Hugo](https://gohugo.io/), theme [Minimal](https://github.com/onaralili/minimal/tree/master) with some modifications.
 
 ### Modification
 
