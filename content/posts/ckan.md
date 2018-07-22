@@ -1,7 +1,7 @@
 title: "CKAN - open-source platform for your datasets. Installing and Troubleshooting "
 date: 2018-07-22
 tags: ["ckan", "dataset", "open-source"]
-draft: true
+draft: false
 
 ## CMS for open data?
 [CKAN](https://ckan.org/) is a free & open-source platform to publish and host datasets in your own server. It has great search integration using [Solr](https://lucene.apache.org/solr/), API, data visualization and many more features that makes open data discoverable. The full list of features can be found [here] (https://ckan.org/features/). In order to install CKAN on your server, you have two options either from source (via GitHub repository) or from the package if you are using Ubuntu. Although official documentation demonstrates on Ubuntu, it works pretty much every Linux distribution, even in Windows. I am going to write about my experience deploying it on Ubuntu 16.04 64-bit server and the problems I faced and the way I solved them.
