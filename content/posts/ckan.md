@@ -22,7 +22,7 @@ You might want to run 'apt-get -f install' to correct these: The following packa
 Even though I run *apt-get -f install*, it didn't solve the problem. Following query solve it and installed all missing packages
 ``` sudo apt --fix-broken install ```
  
-### Issue #3 CKAN Configuration and database connection string
+### Issue #2 CKAN Configuration and database connection string
 Unfortunately, the documentation lacks to mention that you have to modify CKAN config file to be able to connect to the database. Otherwise during the phase :
 ``` sudo ckan db init ```
 You will not be able to initialize the database. In order to config, go to */etc/ckan/default/production.ini* directory. Under the Database Settings, modify the value of *sqlalchemy.url* accordingly, make sure that change parameter *pass* to your database user's password.  After this modification, you will be able to run the query without any issue.
