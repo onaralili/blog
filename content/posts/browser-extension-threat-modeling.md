@@ -14,7 +14,7 @@ As we see, automated threat analyzes are flawed and obviously not as effective a
 
 ## Architecture and Potential threats
 From now on, we will see the system from an attacker's perspective and how a possible malicious extension can misuse its privileges. Before we start, let's see how Chrome architecture works and handles extensions. I roughly demonstrated how the architecture works in Figure 1. As you see from the illustration, a website runs within it is origin as well as an extension. Chrome defines an extension's origin based generated unique URL address. An extension can access and interact its own file system as websites do. On the contrary to websites, an extension can ask for the cross-origin permission, therefore, having an access to make cross-origin requests. What this means for an end-user is that a malicious extension can inject a code and send an HTTP request on behalf of the inject web pages.\
-<img src="/images/browser-extension-threat-modeling/browser-extension-architecture.png" alt="Browser-Extension Architecture" width="300"/> \
+<img class="center" src="/images/browser-extension-threat-modeling/browser-extension-architecture.png" alt="Browser-Extension Architecture" width="300"/> \
 
 Back to the figure, an extension can interact with a browser's and system's APIs in the case of granted privileges, obtaining almost the same rights as a browser. An extension works in Execution environment [6] also known as an isolated world where say inject JS code work within its environment and doesn't conflict with a websites JS functions. As a part of the security model, in order to an extension has access to resources it defines its desired permissions in a manifest.json file, which looks like following:
 ```
@@ -28,7 +28,7 @@ In Figure 2, we can see how above permission syntax shows up for a user. It may 
 ─ Full access to DOM elements of a webpage \
 ─ Inject executable JS code into a webpage \
 ─ Insert CSS code into a webpage \
-<img src="/images/browser-extension-threat-modeling/extension-permission.png" alt="Chrome Extension Permission" width="300"/> \
+<img class="center" src="/images/browser-extension-threat-modeling/extension-permission.png" alt="Chrome Extension Permission" width="300"/> \
 
 These are only three of the permissions that have been given based on <tabs> privileges. Content Scripts is another system where a developer may want to always inject a JavaScript code into every page opened by a user. To achieve this content_scripts field utilized in manifest.json as following:
 ```
@@ -41,7 +41,7 @@ These are only three of the permissions that have been given based on <tabs> pri
 ```
 As you can see permission system opens a wide range of attack opportunities for an intruder. These rich features are potential tools for an attacker to manipulate a system. I will talk more about this in the Thread Model section.
 Once an extension has been installed it plays a role as a "bridge" between a user and a website. Figure 3 demonstrates this concept, this feature mostly used by ad blockers since they try to filter out included JavaScript codes from the DOM, therefore before showing webpage to the user it has to go through the extension to achieve the desired result. \
-<img src="/images/browser-extension-threat-modeling/extension-interaction.png" alt="User Access" width="300"/> \
+<img class="center" src="/images/browser-extension-threat-modeling/extension-interaction.png" alt="User Access" width="500"/> \
 Unfortunately, this is also a shiny opportunity for the malware companies to inject ad-
 vertisement into the page without user's consent.
 
@@ -75,7 +75,7 @@ This is the feature mostly misused for hijacking users' credentials by collectin
 ```
 Despite the fact that it is a short list, it is very effective. This list will be used as lookup table each time when a user signs in a webpage to get the username of the user.
 At this point, we can send the collected data to remote server. To meet our needs, I developed a simple RESTful API server to receive collected information. The extension automatically posts the collected sensitive information to the API and the server stores it in the local database. In Figure 4, we can observe stored data from the user's browser. \
-<img src="/images/browser-extension-threat-modeling/sample-data.png" alt="Collected sample data from a user" width="300"/> \
+<img class="center" src="/images/browser-extension-threat-modeling/sample-data.png" alt="Collected sample data from a user" width="300"/> \
 As we can see, a simple common privilege access can lead a massive leak of sensitive data, this technique can be extended to collect other kind of personal information such as payment credentials (PayPal, credit card etc.), or identity stealing.
 ### HTTP FLOOD
 Since our extension has a right to make an HTTP request, we can perform HTTP Flood [7] which is a type of DDoS attack where an injected machine will make GET or POST request to the target. We are going to modify above extension to model HTTP Flood. Firstly, we need a target where the requests will be sent. As we mentioned above, an extension receives an update from the web store. This is a practical way to use Command and Control technique to send a target address to the bot. This can be done as simple as creating a .txt file that contains information about target URL and interval. Here is the example of such a file:
@@ -139,8 +139,9 @@ By employing HTML5 data attributes [10], we define _data-sensitivity_ and set th
 ```
 Once this implementation is applied the extension will only be able to access the ele- ments that have been allowed by the user. More precisely, _dom_sensitivity_access:_ low will not able to get the value of password because of _data-sensitivity = "high"_ attribute. A user can be notified before installing the extension as the following message:
 _Read, Write and access personal data (credit card, password etc.) on the websites you visit_
-The _same_origin_ and _cross_origin_ allows the system know access level of HTTP requests. In case the same_origin permission has allow status, it will let an extension to send only HTTP request originated from the same source. The same goes for cross_origin, the system will permit an extension to make unlimited cross-origin HTTP requests. The following message can be presented to the end-users before installation to reveal what they are about to install:
->Send a request on behalf of you to remote services
+The _same_origin_ and _cross_origin_ allows the system know access level of HTTP requests. In case the same_origin permission has allow status, it will let an extension to send only HTTP request originated from the same source. The same goes for cross_origin, the system will permit an extension to make unlimited cross-origin HTTP requests. The following message can be presented to the end-users before installation to reveal what they are about to install:  
+> Send a request on behalf of you to remote services  
+
 Going back to the the first table after introducing the new permission system the malicious system will have a hard time to trick a user to install the malicious extension since the following permission needs to be accessed by a user:  
   
 | Desired access  | Message for a user  |
@@ -148,6 +149,7 @@ Going back to the the first table after introducing the new permission system th
 | DOM  | Read and Write the websites you visit  |
 | Read sensitive field from the DOM  |  Read, Write and access personal data (credit card, pass- word etc.) on the websites you visit |
 | Send cross origin requests  |  Send a request on behalf of you to remote services |
+
 
 These messages introduces the better detail about an extension and conscious user will not allow such behavior in simple extensions such as a calculator, weather, translator etc.
 
@@ -173,14 +175,18 @@ http://dev1.www.isocdev.org/sites/default/files/11_4.pdf \
 table{
     border-collapse: collapse;
     border-spacing: 0;
-    border:2px solid #ff0000;
 }
-
 th{
     border:2px solid #000000;
 }
 
 td{
     border:1px solid #000000;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 </style>
