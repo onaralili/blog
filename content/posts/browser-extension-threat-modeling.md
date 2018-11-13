@@ -92,7 +92,7 @@ As we saw so far, the permission system currently utilized by the browser is sim
 One way to solve this is to expand the scope of the privileges presenting a new, more advanced privileges system. Let's look at this using the extension we demonstrated on the Threat Model section. In our case, the bad actor wants to access to: 
     
 | Desired access  | Permitted under the permission  |
-|---|---|
+|--- |---|
 | DOM  | http://*/  |
 | Read sensitive field from the DOM  |  http://*/ |
 | Send cross origin requests  |  http://*/ |  
@@ -101,7 +101,7 @@ These features allow the malicious actor to accomplished what illustrated.
 We introduce new permission keywords that need to be asked by the developers to have those accesses.  
   
 | Desired access  | Permitted under the permission  | Access level |
-|---|---|---|
+|--- |--- | ---|
 | DOM  | dom_access  | read, write
 | Read sensitive field from the DOM  |  dom_sensitivity_access | low, medium, high
 | Send cross origin requests  |  same_origin / cross_origin | allow  
@@ -144,7 +144,7 @@ The _same_origin_ and _cross_origin_ allows the system know access level of HTTP
 Going back to the the first table after introducing the new permission system the malicious system will have a hard time to trick a user to install the malicious extension since the following permission needs to be accessed by a user:  
   
 | Desired access  | Message for a user  |
-|---|---|
+|--- |---|
 | DOM  | Read and Write the websites you visit  |
 | Read sensitive field from the DOM  |  Read, Write and access personal data (credit card, pass- word etc.) on the websites you visit |
 | Send cross origin requests  |  Send a request on behalf of you to remote services |
@@ -154,20 +154,33 @@ These messages introduces the better detail about an extension and conscious use
 ## Conclusion
 Nowadays, the extensions are widely being used by users to increase browser experience. As the browser extensions are rapidly growing so the number of malicious extensions. In this report, we looked at how an extension works, what threats and risks it can bring such as identity and sensitive information stealing, making a user part of the bot-net network and performing DDoS attacks. We also went through what kind of counteracts can be taken to prevent these threats.
 
-References
-1. Browser usage, http://gs.statcounter.com/
-2. Adrienne Porter Felt, Elizabeth Ha, Serge Egelman, Ariel Haney, Erika Chin, David Wag-
-ner.: Android Permissions: User Attention, Comprehension, and Behavior,
-https://cups.cs.cmu.edu/soups/2012/proceedings/a3_Felt.pdf
+References \
+1. Browser usage, http://gs.statcounter.com/ \
+2. Adrienne Porter Felt, Elizabeth Ha, Serge Egelman, Ariel Haney, Erika Chin, David Wagner.: Android Permissions: User Attention, Comprehension, and Behavior, https://cups.cs.cmu.edu/soups/2012/proceedings/a3_Felt.pdf \
 3. Dan Goodin.: Google Chrome extensions with 500,000 downloads found to be malicious,
-https://arstechnica.com/information-technology/2018/01/500000-chrome-users-fall-prey-to-malicious-extensions-in-google-web-store/
+https://arstechnica.com/information-technology/2018/01/500000-chrome-users-fall-prey-to-malicious-extensions-in-google-web-store/ \
 4. Jorge Villalobos: Extension review wait times are about to get much shorter,
-https://blog.mozilla.org/addons/2017/09/21/review-wait-times-get-shorter/
-5. Reddit Firefox: https://www.reddit.com/r/firefox/comments/737kze/min-ing_codes_been_discovered_in_two_reviewed/
-6. Execution environment: https://developer.chrome.com/extensions/content_scripts#execu-tion-environment
-7. HTTP FLOOD: https://www.incapsula.com/ddos/attack-glossary/http-flood.html
-8. Chrome extensions are mining cryptocurrency now: http://bgr.com/2017/12/29/mining-cryptocurrency-home-pc-chrome-extension/
+https://blog.mozilla.org/addons/2017/09/21/review-wait-times-get-shorter/ \
+5. Reddit Firefox: https://www.reddit.com/r/firefox/comments/737kze/min-ing_codes_been_discovered_in_two_reviewed/ \
+6. Execution environment: https://developer.chrome.com/extensions/content_scripts#execu-tion-environment \
+7. HTTP FLOOD: https://www.incapsula.com/ddos/attack-glossary/http-flood.html \
+8. Chrome extensions are mining cryptocurrency now: http://bgr.com/2017/12/29/mining-cryptocurrency-home-pc-chrome-extension/ \
 9. Chrome Extensions: Threat Analysis and Countermeasures:
-http://dev1.www.isocdev.org/sites/default/files/11_4.pdf
+http://dev1.www.isocdev.org/sites/default/files/11_4.pdf \
 10. Using data attributes: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
 
+<style>
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:2px solid #ff0000;
+}
+
+th{
+    border:2px solid #000000;
+}
+
+td{
+    border:1px solid #000000;
+}
+</style>
