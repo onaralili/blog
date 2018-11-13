@@ -188,5 +188,7 @@ td{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 </style>
