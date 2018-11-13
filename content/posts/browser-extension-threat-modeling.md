@@ -175,6 +175,7 @@ http://dev1.www.isocdev.org/sites/default/files/11_4.pdf \
 table{
     border-collapse: collapse;
     border-spacing: 0;
+    margin-bottom: 1em;
 }
 th{
     border:2px solid #000000;
