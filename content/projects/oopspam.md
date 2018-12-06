@@ -1,5 +1,5 @@
 ---
-title: "OOSpam multiple spam filter"
+title: "OOPSpam multiple spam filter"
 description: "OOPSpam detects the likelihood of spam more accurately. It allows you to scan your content utilizing multiple machine learning based, powerful text analyzers."
 tags: ["spam", "spam filter", "spam API"]
 weight: 1
