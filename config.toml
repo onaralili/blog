@@ -7,7 +7,7 @@ googleAnalytics = "UA-33248471-1"
 
 [params]
     author = "Onar Alili"
-    description = "a Computer Engineering master's student, tech enthusiast "
+    description = "a recent CS graduate, tech enthusiast "
     githubUsername = "onaralili"
     accent = "#5c7b1e"
     showBorder = true
