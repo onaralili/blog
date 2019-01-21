@@ -3,203 +3,203 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/projects/hipmytrip/</loc>
+    <loc>projects/hipmytrip/</loc>
     <lastmod>2018-05-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/projects/splitup/</loc>
+    <loc>projects/splitup/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/projects/oopspam/</loc>
+    <loc>projects/oopspam/</loc>
     <lastmod>2017-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/maliciousbrowserextension/</loc>
+    <loc>posts/maliciousbrowserextension/</loc>
     <lastmod>2018-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/srp/</loc>
+    <loc>posts/srp/</loc>
     <lastmod>2018-02-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/oopspamfilter/</loc>
+    <loc>posts/oopspamfilter/</loc>
     <lastmod>2017-08-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/baramahackday/</loc>
+    <loc>posts/baramahackday/</loc>
     <lastmod>2016-03-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/barama/</loc>
-    <lastmod>2016-03-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/browser/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/chrome/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/chrome-browser/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/chrome-extension/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/chrome-plugin/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/cryptography/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/extension/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/hackathon/</loc>
+    <loc>tags/barama/</loc>
     <lastmod>2016-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/key-exchange/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/malicious-extension/</loc>
+    <loc>tags/browser/</loc>
     <lastmod>2018-05-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/map/</loc>
-    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <loc>categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/oopspam/</loc>
-    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/productivity/</loc>
+    <loc>tags/chrome/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <loc>tags/chrome-browser/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/secure-remote-password/</loc>
+    <loc>tags/chrome-extension/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/chrome-plugin/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/cryptography/</loc>
     <lastmod>2018-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/security/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <loc>tags/extension/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/spam/</loc>
-    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/spam-api/</loc>
-    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/spam-filter/</loc>
-    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/spam-filter-api/</loc>
-    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/spamassassin/</loc>
-    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/srp/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>tags/hackathon/</loc>
     <lastmod>2016-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/travel-map/</loc>
+    <loc>tags/key-exchange/</loc>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/malicious-extension/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/map/</loc>
+    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/oopspam/</loc>
+    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>posts/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/productivity/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>projects/</loc>
+    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/secure-remote-password/</loc>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/security/</loc>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/spam/</loc>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/spam-api/</loc>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/spam-filter/</loc>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/spam-filter-api/</loc>
+    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/spamassassin/</loc>
+    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/srp/</loc>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/</loc>
+    <lastmod>2016-03-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>tags/travel-map/</loc>
     <lastmod>2018-05-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

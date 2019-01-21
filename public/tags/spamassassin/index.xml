@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spamassassin on Onar Alili</title>
-    <link>http://localhost:1313/tags/spamassassin/</link>
+    <link>tags/spamassassin/</link>
     <description>Recent content in Spamassassin on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Aug 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/spamassassin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="tags/spamassassin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OOPSpam API multiple spam filter</title>
-      <link>http://localhost:1313/posts/oopspamfilter/</link>
+      <link>posts/oopspamfilter/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/oopspamfilter/</guid>
+      <guid>posts/oopspamfilter/</guid>
       <description>visit https://oopspam.com/ I was thinking about some ideas as a side-project. Well, I thought it would be nice to pass my project-based exams Mobile Applications and Cloud Computing, Human-Computer Interaction with the same idea. I came up with the idea of VirusTotal-like service but as a spam filter service. As a result, OOPSpam API came to light. After making a few research I found out there is actually well-developed solution like mine, however, the price seemed to be high.</description>
     </item>
     

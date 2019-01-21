@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Productivity on Onar Alili</title>
-    <link>http://localhost:1313/tags/productivity/</link>
+    <link>tags/productivity/</link>
     <description>Recent content in Productivity on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SplitUp! - a tab manager for Google Chrome extension</title>
-      <link>http://localhost:1313/projects/splitup/</link>
+      <link>projects/splitup/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/splitup/</guid>
+      <guid>projects/splitup/</guid>
       <description></description>
     </item>
     

@@ -2,219 +2,219 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Onar Alili</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>tags/</link>
     <description>Recent content in Tags on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 15 Mar 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Barama</title>
-      <link>http://localhost:1313/tags/barama/</link>
+      <link>tags/barama/</link>
       <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/barama/</guid>
+      <guid>tags/barama/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Browser</title>
-      <link>http://localhost:1313/tags/browser/</link>
+      <link>tags/browser/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/browser/</guid>
+      <guid>tags/browser/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chrome</title>
-      <link>http://localhost:1313/tags/chrome/</link>
+      <link>tags/chrome/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/chrome/</guid>
+      <guid>tags/chrome/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chrome Browser</title>
-      <link>http://localhost:1313/tags/chrome-browser/</link>
+      <link>tags/chrome-browser/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/chrome-browser/</guid>
+      <guid>tags/chrome-browser/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chrome Extension</title>
-      <link>http://localhost:1313/tags/chrome-extension/</link>
+      <link>tags/chrome-extension/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/chrome-extension/</guid>
+      <guid>tags/chrome-extension/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chrome Plugin</title>
-      <link>http://localhost:1313/tags/chrome-plugin/</link>
+      <link>tags/chrome-plugin/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/chrome-plugin/</guid>
+      <guid>tags/chrome-plugin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cryptography</title>
-      <link>http://localhost:1313/tags/cryptography/</link>
+      <link>tags/cryptography/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/cryptography/</guid>
+      <guid>tags/cryptography/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Extension</title>
-      <link>http://localhost:1313/tags/extension/</link>
+      <link>tags/extension/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/extension/</guid>
+      <guid>tags/extension/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hackathon</title>
-      <link>http://localhost:1313/tags/hackathon/</link>
+      <link>tags/hackathon/</link>
       <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/hackathon/</guid>
+      <guid>tags/hackathon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Key Exchange</title>
-      <link>http://localhost:1313/tags/key-exchange/</link>
+      <link>tags/key-exchange/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/key-exchange/</guid>
+      <guid>tags/key-exchange/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Malicious Extension</title>
-      <link>http://localhost:1313/tags/malicious-extension/</link>
+      <link>tags/malicious-extension/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/malicious-extension/</guid>
+      <guid>tags/malicious-extension/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Map</title>
-      <link>http://localhost:1313/tags/map/</link>
+      <link>tags/map/</link>
       <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/map/</guid>
+      <guid>tags/map/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oopspam</title>
-      <link>http://localhost:1313/tags/oopspam/</link>
+      <link>tags/oopspam/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/oopspam/</guid>
+      <guid>tags/oopspam/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Productivity</title>
-      <link>http://localhost:1313/tags/productivity/</link>
+      <link>tags/productivity/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/productivity/</guid>
+      <guid>tags/productivity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Secure Remote Password</title>
-      <link>http://localhost:1313/tags/secure-remote-password/</link>
+      <link>tags/secure-remote-password/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/secure-remote-password/</guid>
+      <guid>tags/secure-remote-password/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Security</title>
-      <link>http://localhost:1313/tags/security/</link>
+      <link>tags/security/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/security/</guid>
+      <guid>tags/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam</title>
-      <link>http://localhost:1313/tags/spam/</link>
+      <link>tags/spam/</link>
       <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/spam/</guid>
+      <guid>tags/spam/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam Api</title>
-      <link>http://localhost:1313/tags/spam-api/</link>
+      <link>tags/spam-api/</link>
       <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/spam-api/</guid>
+      <guid>tags/spam-api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam Filter</title>
-      <link>http://localhost:1313/tags/spam-filter/</link>
+      <link>tags/spam-filter/</link>
       <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/spam-filter/</guid>
+      <guid>tags/spam-filter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam Filter Api</title>
-      <link>http://localhost:1313/tags/spam-filter-api/</link>
+      <link>tags/spam-filter-api/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/spam-filter-api/</guid>
+      <guid>tags/spam-filter-api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spamassassin</title>
-      <link>http://localhost:1313/tags/spamassassin/</link>
+      <link>tags/spamassassin/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/spamassassin/</guid>
+      <guid>tags/spamassassin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Srp</title>
-      <link>http://localhost:1313/tags/srp/</link>
+      <link>tags/srp/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/srp/</guid>
+      <guid>tags/srp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Travel Map</title>
-      <link>http://localhost:1313/tags/travel-map/</link>
+      <link>tags/travel-map/</link>
       <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/travel-map/</guid>
+      <guid>tags/travel-map/</guid>
       <description></description>
     </item>
     

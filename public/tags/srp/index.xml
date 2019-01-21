@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Srp on Onar Alili</title>
-    <link>http://localhost:1313/tags/srp/</link>
+    <link>tags/srp/</link>
     <description>Recent content in Srp on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 27 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/srp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="tags/srp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>What is The Secure Remote Password (SRP) protocol?</title>
-      <link>http://localhost:1313/posts/srp/</link>
+      <link>posts/srp/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/srp/</guid>
+      <guid>posts/srp/</guid>
       <description>I have decided to publish materials I wrote for my Computer and Network Security course. It could help someone out there, so why keep it on my hard drive. You can obviously get shorter and straightforward information from following Wikipedia page. https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol
 So, what is it? The Secure Remote Password (SRP) protocol is a great method for securing remote access to many applications. It has been developed by Thomas Wu at Stanford University to enable the secure authentication based on username and password.</description>
     </item>

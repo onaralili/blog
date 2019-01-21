@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Onar Alili</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>projects/</link>
     <description>Recent content in Projects on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 03 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HipMyTrip! - an artistic travel map for your trip</title>
-      <link>http://localhost:1313/projects/hipmytrip/</link>
+      <link>projects/hipmytrip/</link>
       <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/hipmytrip/</guid>
+      <guid>projects/hipmytrip/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SplitUp! - a tab manager for Google Chrome extension</title>
-      <link>http://localhost:1313/projects/splitup/</link>
+      <link>projects/splitup/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/splitup/</guid>
+      <guid>projects/splitup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OOSpam multiple spam filter</title>
-      <link>http://localhost:1313/projects/oopspam/</link>
+      <link>projects/oopspam/</link>
       <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/oopspam/</guid>
+      <guid>projects/oopspam/</guid>
       <description></description>
     </item>
     
