@@ -7,7 +7,7 @@ googleAnalytics = "UA-33248471-1"
 
 [params]
     author = "Onar Alili"
-    description = "a recent CS graduate, tech enthusiast "
+    description = "indie hacker"
     githubUsername = "onaralili"
     accent = "#5c7b1e"
     showBorder = true
@@ -15,7 +15,7 @@ googleAnalytics = "UA-33248471-1"
     font = "Raleway" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift","javascript","JSON"]
     enableEmoji =  true
 
 [[menu.main]]

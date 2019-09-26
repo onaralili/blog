@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Malicious Extension on Onar Alili</title>
-    <link>tags/malicious-extension/</link>
+    <link>https://onaralili.com/tags/malicious-extension/</link>
     <description>Recent content in Malicious Extension on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 14 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="tags/malicious-extension/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://onaralili.com/tags/malicious-extension/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How a chrome extension turned to the Dark Side</title>
-      <link>posts/maliciousbrowserextension/</link>
+      <link>https://onaralili.com/posts/maliciousbrowserextension/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>posts/maliciousbrowserextension/</guid>
+      <guid>https://onaralili.com/posts/maliciousbrowserextension/</guid>
       <description>This is a short story and malware analysis of a chrome extension that served people well then the developer sell it to the malicious advertisement company.
 Discovery As you may know, recently I have published an extension (yes! one more tab manager for the world) SplitUp! - Tab Manager. I was looking for a way to improve it and Chrome Web Store is a great place to see other extensions to get inspired for new ideas.</description>
     </item>

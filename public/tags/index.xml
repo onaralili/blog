@@ -2,219 +2,228 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Onar Alili</title>
-    <link>tags/</link>
+    <link>https://onaralili.com/tags/</link>
     <description>Recent content in Tags on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 15 Mar 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://onaralili.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Barama</title>
-      <link>tags/barama/</link>
+      <link>https://onaralili.com/tags/barama/</link>
       <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>tags/barama/</guid>
+      <guid>https://onaralili.com/tags/barama/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Browser</title>
-      <link>tags/browser/</link>
-      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
+      <link>https://onaralili.com/tags/browser/</link>
+      <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>tags/browser/</guid>
+      <guid>https://onaralili.com/tags/browser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Browser Extension</title>
+      <link>https://onaralili.com/tags/browser-extension/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://onaralili.com/tags/browser-extension/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chrome</title>
-      <link>tags/chrome/</link>
-      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
+      <link>https://onaralili.com/tags/chrome/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>tags/chrome/</guid>
+      <guid>https://onaralili.com/tags/chrome/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Chrome Browser</title>
-      <link>tags/chrome-browser/</link>
-      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
+      <title>Ckan</title>
+      <link>https://onaralili.com/tags/ckan/</link>
+      <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>tags/chrome-browser/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Chrome Extension</title>
-      <link>tags/chrome-extension/</link>
-      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>tags/chrome-extension/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Chrome Plugin</title>
-      <link>tags/chrome-plugin/</link>
-      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>tags/chrome-plugin/</guid>
+      <guid>https://onaralili.com/tags/ckan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cryptography</title>
-      <link>tags/cryptography/</link>
+      <link>https://onaralili.com/tags/cryptography/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>tags/cryptography/</guid>
+      <guid>https://onaralili.com/tags/cryptography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dataset</title>
+      <link>https://onaralili.com/tags/dataset/</link>
+      <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://onaralili.com/tags/dataset/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Extension</title>
-      <link>tags/extension/</link>
+      <link>https://onaralili.com/tags/extension/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>tags/extension/</guid>
+      <guid>https://onaralili.com/tags/extension/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hackathon</title>
-      <link>tags/hackathon/</link>
+      <link>https://onaralili.com/tags/hackathon/</link>
       <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>tags/hackathon/</guid>
+      <guid>https://onaralili.com/tags/hackathon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Key Exchange</title>
-      <link>tags/key-exchange/</link>
+      <link>https://onaralili.com/tags/key-exchange/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>tags/key-exchange/</guid>
+      <guid>https://onaralili.com/tags/key-exchange/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Malicious Extension</title>
-      <link>tags/malicious-extension/</link>
+      <link>https://onaralili.com/tags/malicious-extension/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>tags/malicious-extension/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Map</title>
-      <link>tags/map/</link>
-      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>tags/map/</guid>
+      <guid>https://onaralili.com/tags/malicious-extension/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oopspam</title>
-      <link>tags/oopspam/</link>
+      <link>https://onaralili.com/tags/oopspam/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>tags/oopspam/</guid>
+      <guid>https://onaralili.com/tags/oopspam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://onaralili.com/tags/open-source/</link>
+      <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://onaralili.com/tags/open-source/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Productivity</title>
-      <link>tags/productivity/</link>
+      <link>https://onaralili.com/tags/productivity/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>tags/productivity/</guid>
+      <guid>https://onaralili.com/tags/productivity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Secure Remote Password</title>
-      <link>tags/secure-remote-password/</link>
+      <link>https://onaralili.com/tags/secure-remote-password/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>tags/secure-remote-password/</guid>
+      <guid>https://onaralili.com/tags/secure-remote-password/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Security</title>
-      <link>tags/security/</link>
+      <link>https://onaralili.com/tags/security/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>tags/security/</guid>
+      <guid>https://onaralili.com/tags/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam</title>
-      <link>tags/spam/</link>
+      <link>https://onaralili.com/tags/spam/</link>
       <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>tags/spam/</guid>
+      <guid>https://onaralili.com/tags/spam/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam Api</title>
-      <link>tags/spam-api/</link>
+      <link>https://onaralili.com/tags/spam-api/</link>
       <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>tags/spam-api/</guid>
+      <guid>https://onaralili.com/tags/spam-api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam Filter</title>
-      <link>tags/spam-filter/</link>
+      <link>https://onaralili.com/tags/spam-filter/</link>
       <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>tags/spam-filter/</guid>
+      <guid>https://onaralili.com/tags/spam-filter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam Filter Api</title>
-      <link>tags/spam-filter-api/</link>
+      <link>https://onaralili.com/tags/spam-filter-api/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>tags/spam-filter-api/</guid>
+      <guid>https://onaralili.com/tags/spam-filter-api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spamassassin</title>
-      <link>tags/spamassassin/</link>
+      <link>https://onaralili.com/tags/spamassassin/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>tags/spamassassin/</guid>
+      <guid>https://onaralili.com/tags/spamassassin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Srp</title>
-      <link>tags/srp/</link>
+      <link>https://onaralili.com/tags/srp/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>tags/srp/</guid>
+      <guid>https://onaralili.com/tags/srp/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Travel Map</title>
-      <link>tags/travel-map/</link>
-      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
+      <title>Tab Manager</title>
+      <link>https://onaralili.com/tags/tab-manager/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>tags/travel-map/</guid>
+      <guid>https://onaralili.com/tags/tab-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Threat Modeling</title>
+      <link>https://onaralili.com/tags/threat-modeling/</link>
+      <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://onaralili.com/tags/threat-modeling/</guid>
       <description></description>
     </item>
     
