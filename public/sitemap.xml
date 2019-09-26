@@ -3,214 +3,214 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://onaralili.com/projects/splitup/</loc>
+    <loc>http://localhost:1313/projects/splitup/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://onaralili.com/projects/oopspam/</loc>
+    <loc>http://localhost:1313/projects/oopspam/</loc>
     <lastmod>2017-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://onaralili.com/posts/browser-extension-threat-modeling/</loc>
+    <loc>http://localhost:1313/posts/browser-extension-threat-modeling/</loc>
     <lastmod>2018-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://onaralili.com/posts/ckan/</loc>
+    <loc>http://localhost:1313/posts/ckan/</loc>
     <lastmod>2018-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://onaralili.com/posts/maliciousbrowserextension/</loc>
+    <loc>http://localhost:1313/posts/maliciousbrowserextension/</loc>
     <lastmod>2018-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://onaralili.com/posts/srp/</loc>
+    <loc>http://localhost:1313/posts/srp/</loc>
     <lastmod>2018-02-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://onaralili.com/posts/oopspamfilter/</loc>
+    <loc>http://localhost:1313/posts/oopspamfilter/</loc>
     <lastmod>2017-08-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://onaralili.com/posts/baramahackday/</loc>
+    <loc>http://localhost:1313/posts/baramahackday/</loc>
     <lastmod>2016-03-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://onaralili.com/tags/barama/</loc>
-    <lastmod>2016-03-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/browser/</loc>
-    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/browser-extension/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/chrome/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/ckan/</loc>
-    <lastmod>2018-07-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/cryptography/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/dataset/</loc>
-    <lastmod>2018-07-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/extension/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/hackathon/</loc>
+    <loc>http://localhost:1313/tags/barama/</loc>
     <lastmod>2016-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://onaralili.com/tags/key-exchange/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/malicious-extension/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/oopspam/</loc>
-    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/open-source/</loc>
-    <lastmod>2018-07-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/posts/</loc>
+    <loc>http://localhost:1313/tags/browser/</loc>
     <lastmod>2018-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://onaralili.com/tags/productivity/</loc>
+    <loc>http://localhost:1313/tags/browser-extension/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://onaralili.com/projects/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://onaralili.com/tags/secure-remote-password/</loc>
+    <loc>http://localhost:1313/tags/chrome/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ckan/</loc>
+    <lastmod>2018-07-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/cryptography/</loc>
     <lastmod>2018-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://onaralili.com/tags/security/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/dataset/</loc>
+    <lastmod>2018-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://onaralili.com/tags/spam/</loc>
-    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/extension/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://onaralili.com/tags/spam-api/</loc>
-    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/spam-filter/</loc>
-    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/spam-filter-api/</loc>
-    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/spamassassin/</loc>
-    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/srp/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/tab-manager/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onaralili.com/tags/</loc>
+    <loc>http://localhost:1313/tags/hackathon/</loc>
     <lastmod>2016-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://onaralili.com/tags/threat-modeling/</loc>
+    <loc>http://localhost:1313/tags/key-exchange/</loc>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/malicious-extension/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/oopspam/</loc>
+    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/open-source/</loc>
+    <lastmod>2018-07-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/productivity/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/secure-remote-password/</loc>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/security/</loc>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/spam/</loc>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/spam-api/</loc>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/spam-filter/</loc>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/spam-filter-api/</loc>
+    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/spamassassin/</loc>
+    <lastmod>2017-08-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/srp/</loc>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/tab-manager/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2016-03-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/threat-modeling/</loc>
     <lastmod>2018-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

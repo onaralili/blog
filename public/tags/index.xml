@@ -2,228 +2,228 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Onar Alili</title>
-    <link>https://onaralili.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 15 Mar 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://onaralili.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Barama</title>
-      <link>https://onaralili.com/tags/barama/</link>
+      <link>http://localhost:1313/tags/barama/</link>
       <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/barama/</guid>
+      <guid>http://localhost:1313/tags/barama/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Browser</title>
-      <link>https://onaralili.com/tags/browser/</link>
+      <link>http://localhost:1313/tags/browser/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/browser/</guid>
+      <guid>http://localhost:1313/tags/browser/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Browser Extension</title>
-      <link>https://onaralili.com/tags/browser-extension/</link>
+      <link>http://localhost:1313/tags/browser-extension/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/browser-extension/</guid>
+      <guid>http://localhost:1313/tags/browser-extension/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chrome</title>
-      <link>https://onaralili.com/tags/chrome/</link>
+      <link>http://localhost:1313/tags/chrome/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/chrome/</guid>
+      <guid>http://localhost:1313/tags/chrome/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ckan</title>
-      <link>https://onaralili.com/tags/ckan/</link>
+      <link>http://localhost:1313/tags/ckan/</link>
       <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/ckan/</guid>
+      <guid>http://localhost:1313/tags/ckan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cryptography</title>
-      <link>https://onaralili.com/tags/cryptography/</link>
+      <link>http://localhost:1313/tags/cryptography/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/cryptography/</guid>
+      <guid>http://localhost:1313/tags/cryptography/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dataset</title>
-      <link>https://onaralili.com/tags/dataset/</link>
+      <link>http://localhost:1313/tags/dataset/</link>
       <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/dataset/</guid>
+      <guid>http://localhost:1313/tags/dataset/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Extension</title>
-      <link>https://onaralili.com/tags/extension/</link>
+      <link>http://localhost:1313/tags/extension/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/extension/</guid>
+      <guid>http://localhost:1313/tags/extension/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hackathon</title>
-      <link>https://onaralili.com/tags/hackathon/</link>
+      <link>http://localhost:1313/tags/hackathon/</link>
       <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/hackathon/</guid>
+      <guid>http://localhost:1313/tags/hackathon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Key Exchange</title>
-      <link>https://onaralili.com/tags/key-exchange/</link>
+      <link>http://localhost:1313/tags/key-exchange/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/key-exchange/</guid>
+      <guid>http://localhost:1313/tags/key-exchange/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Malicious Extension</title>
-      <link>https://onaralili.com/tags/malicious-extension/</link>
+      <link>http://localhost:1313/tags/malicious-extension/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/malicious-extension/</guid>
+      <guid>http://localhost:1313/tags/malicious-extension/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oopspam</title>
-      <link>https://onaralili.com/tags/oopspam/</link>
+      <link>http://localhost:1313/tags/oopspam/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/oopspam/</guid>
+      <guid>http://localhost:1313/tags/oopspam/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Open Source</title>
-      <link>https://onaralili.com/tags/open-source/</link>
+      <link>http://localhost:1313/tags/open-source/</link>
       <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/open-source/</guid>
+      <guid>http://localhost:1313/tags/open-source/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Productivity</title>
-      <link>https://onaralili.com/tags/productivity/</link>
+      <link>http://localhost:1313/tags/productivity/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/productivity/</guid>
+      <guid>http://localhost:1313/tags/productivity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Secure Remote Password</title>
-      <link>https://onaralili.com/tags/secure-remote-password/</link>
+      <link>http://localhost:1313/tags/secure-remote-password/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/secure-remote-password/</guid>
+      <guid>http://localhost:1313/tags/secure-remote-password/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Security</title>
-      <link>https://onaralili.com/tags/security/</link>
+      <link>http://localhost:1313/tags/security/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/security/</guid>
+      <guid>http://localhost:1313/tags/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam</title>
-      <link>https://onaralili.com/tags/spam/</link>
+      <link>http://localhost:1313/tags/spam/</link>
       <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/spam/</guid>
+      <guid>http://localhost:1313/tags/spam/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam Api</title>
-      <link>https://onaralili.com/tags/spam-api/</link>
+      <link>http://localhost:1313/tags/spam-api/</link>
       <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/spam-api/</guid>
+      <guid>http://localhost:1313/tags/spam-api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam Filter</title>
-      <link>https://onaralili.com/tags/spam-filter/</link>
+      <link>http://localhost:1313/tags/spam-filter/</link>
       <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/spam-filter/</guid>
+      <guid>http://localhost:1313/tags/spam-filter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spam Filter Api</title>
-      <link>https://onaralili.com/tags/spam-filter-api/</link>
+      <link>http://localhost:1313/tags/spam-filter-api/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/spam-filter-api/</guid>
+      <guid>http://localhost:1313/tags/spam-filter-api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spamassassin</title>
-      <link>https://onaralili.com/tags/spamassassin/</link>
+      <link>http://localhost:1313/tags/spamassassin/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/spamassassin/</guid>
+      <guid>http://localhost:1313/tags/spamassassin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Srp</title>
-      <link>https://onaralili.com/tags/srp/</link>
+      <link>http://localhost:1313/tags/srp/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/srp/</guid>
+      <guid>http://localhost:1313/tags/srp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tab Manager</title>
-      <link>https://onaralili.com/tags/tab-manager/</link>
+      <link>http://localhost:1313/tags/tab-manager/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/tab-manager/</guid>
+      <guid>http://localhost:1313/tags/tab-manager/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Threat Modeling</title>
-      <link>https://onaralili.com/tags/threat-modeling/</link>
+      <link>http://localhost:1313/tags/threat-modeling/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://onaralili.com/tags/threat-modeling/</guid>
+      <guid>http://localhost:1313/tags/threat-modeling/</guid>
       <description></description>
     </item>
     
