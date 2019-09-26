@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Browser on Onar Alili</title>
-    <link>http://localhost:1313/tags/browser/</link>
+    <link>https://onaralili.com/tags/browser/</link>
     <description>Recent content in Browser on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/browser/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://onaralili.com/tags/browser/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Browser Extensions Threat Modeling</title>
-      <link>http://localhost:1313/posts/browser-extension-threat-modeling/</link>
+      <link>https://onaralili.com/posts/browser-extension-threat-modeling/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/browser-extension-threat-modeling/</guid>
+      <guid>https://onaralili.com/posts/browser-extension-threat-modeling/</guid>
       <description>This is a report I wrote for one of courses while doing my master studies. Some parts are heavily influced by other realted studies. Please check References section
 Introduction Today, users surf the internet using browsers such as Google Chrome, Firefox, Safari, IE (Edge) etc., these are main browsers are being utilized by users. Statistically, 56.31% of the users use Chrome as their default browser [1]. Therefore, we will mostly focus on Chrome and discuss the way the company protects users from malicious threats from the extensions.</description>
     </item>
     
     <item>
       <title>How a chrome extension turned to the Dark Side</title>
-      <link>http://localhost:1313/posts/maliciousbrowserextension/</link>
+      <link>https://onaralili.com/posts/maliciousbrowserextension/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/maliciousbrowserextension/</guid>
+      <guid>https://onaralili.com/posts/maliciousbrowserextension/</guid>
       <description>This is a short story and malware analysis of a chrome extension that served people well then the developer sell it to the malicious advertisement company.
 Discovery As you may know, recently I have published an extension (yes! one more tab manager for the world) SplitUp! - Tab Manager. I was looking for a way to improve it and Chrome Web Store is a great place to see other extensions to get inspired for new ideas.</description>
     </item>

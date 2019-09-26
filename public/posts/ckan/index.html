@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        
+        <title>CKAN - open-source platform for your datasets. Troubleshooting</title>
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #5c7b1e;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://onaralili.com/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/JSON.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.52" />
+        
+        
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-33248471-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-33248471-1');
+        </script>
+        
+    </head>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">CKAN - open-source platform for your datasets. Troubleshooting</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/projects/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:onar@outlook.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/onaralili/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/onaralili/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/onaralili/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+    
+
+
+    <h4><a href="https://www.onaralili.com/posts/ckan">CKAN - open-source platform for your datasets. Troubleshooting</a></h4>
+    <div>July 22, 2018</div>
+    <br>
+     <kbd class="item-tag">ckan</kbd>  <kbd class="item-tag">dataset</kbd>  <kbd class="item-tag">open-source</kbd> 
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<h2 id="cms-for-open-data">CMS for open data?</h2>
+
+<p><a href="https://ckan.org/">CKAN</a> is a free &amp; open-source platform to publish and host datasets in your own server. It has great search integration using <a href="https://lucene.apache.org/solr/">Solr</a>, API, data visualization and many more features that makes open data discoverable. The full list of features can be found <a href="https://ckan.org/features/">here</a>. In order to install CKAN on your server, you have two options either from source (via GitHub repository) or from the package if you are using Ubuntu. Although official documentation demonstrates on Ubuntu, it works pretty much every Linux distribution, even in Windows. I am going to write about my experience deploying it on Ubuntu 16.04 64-bit server and the problems I faced and the way I solved them.</p>
+
+<h3 id="issue-1-nginx">Issue #1 Nginx</h3>
+
+<p>I followed the official <a href="http://docs.ckan.org/en/latest/maintaining/installing/install-from-package.html">documentation</a> on the website, however, I encountered some issues.
+Installation went smoothly until I reached the point where I have to install nginx</p>
+
+<pre><code class="language-sudo">however, the following error returned during the installation 
+</code></pre>
+
+<p>You might want to run &lsquo;apt-get -f install&rsquo; to correct these: The following packages have unmet dependencies:
+&hellip;
+<code>
+Even though I run *apt-get -f install*, it didn't solve the problem. Following query solve it and installed all missing packages
+</code> sudo apt &ndash;fix-broken install ```</p>
+
+<h3 id="issue-2-ckan-configuration-and-database-connection-string">Issue #2 CKAN Configuration and database connection string</h3>
+
+<p>Unfortunately, the documentation lacks to mention that you have to modify CKAN config file to be able to connect to the database. Otherwise during the phase :
+<code>sudo ckan db init</code>
+You will not be able to initialize the database. In order to config, go to <em>/etc/ckan/default/production.ini</em> directory. Under the Database Settings, modify the value of <em>sqlalchemy.url</em> accordingly, make sure that change parameter <em>pass</em> to your database user&rsquo;s password.  After this modification, you will be able to run the query without any issue.</p>
+
+<h3 id="a-few-important-notes">A few important notes</h3>
+
+<p>After the successful installation, you have to create a sysadmin account in order to get admin privileges on the platform. Follow this <a href="http://docs.ckan.org/en/latest/maintaining/getting-started.html#create-admin-user">doc</a> to add an admin user.  The admin dashboard is under <em>/ckan-admin</em> directory.</p>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "onaralili" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+
+        </footer>
+       
+    </body>
+
+</html>
+

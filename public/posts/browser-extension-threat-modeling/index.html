@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        
+        <title>Browser Extensions Threat Modeling</title>
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #5c7b1e;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://onaralili.com/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/JSON.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.52" />
+        
+        
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-33248471-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-33248471-1');
+        </script>
+        
+    </head>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Browser Extensions Threat Modeling</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/projects/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:onar@outlook.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/onaralili/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/onaralili/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/onaralili/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+    
+
+
+    <h4><a href="https://www.onaralili.com/posts/browser-extension-threat-modeling">Browser Extensions Threat Modeling</a></h4>
+    <div>November 10, 2018</div>
+    <br>
+     <kbd class="item-tag">Threat Modeling</kbd>  <kbd class="item-tag">browser</kbd>  <kbd class="item-tag">browser-extension</kbd> 
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<p><em>This is a report I wrote for one of courses while doing my master studies. Some parts are heavily influced by other realted studies. Please check References section</em></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Today, users surf the internet using browsers such as Google Chrome, Firefox, Safari, IE (Edge) etc., these are main browsers are being utilized by users. Statistically, 56.31% of the users use Chrome as their default browser [1]. Therefore, we will mostly focus on Chrome and discuss the way the company protects users from malicious threats from the extensions. Extensions virtually can access all resources just like a browser. Chrome protects users from behaviors that were not originally offered by the extension by running each extension in the sandbox mode. As an example, if an extension would like to make HTTP request outside of its origin, it is bound to ask additional privileges, however, it can make an HTTP request to its own installation sandbox, say if the extension contains .json file, there is no need for extra permission to ask. According to the survey [2], most of the users don&rsquo;t pay attention to permissions asked by the extension or don&rsquo;t understand technical detail behind it. This raises concern about misuse of the privileges which may lead to stolen credit card information, passwords and other sensitive personal information.
+Beside permission-based protection and sandbox installation, there are other counter measurements are taken by the companies to reduce risks. One of them is an automated code review of the submitted extension. The effectiveness of automated reviews is questionable since there are many cases where malicious extensions have passed the test successfully and being downloaded thousands of users [3]. On the other hand, Firefox used to take a different approach by carrying manual review, however, this program ended in September 2017 [4]. After a week the program dropped, cryptocurrency miners were being reported by users in the Firefox add-ons [5].
+As we see, automated threat analyzes are flawed and obviously not as effective as a manual review. In this report, we will go through potential risks, how they work and how they can get sensitive information from your browser activities, how they can secretly mine cryptocurrency and inject ads. To the end, we will point out possible measurements that can be taken to limit these activities.</p>
+
+<h2 id="architecture-and-potential-threats">Architecture and Potential threats</h2>
+
+<p>From now on, we will see the system from an attacker&rsquo;s perspective and how a possible malicious extension can misuse its privileges. Before we start, let&rsquo;s see how Chrome architecture works and handles extensions. I roughly demonstrated how the architecture works in Figure 1. As you see from the illustration, a website runs within it is origin as well as an extension. Chrome defines an extension&rsquo;s origin based generated unique URL address. An extension can access and interact its own file system as websites do. On the contrary to websites, an extension can ask for the cross-origin permission, therefore, having an access to make cross-origin requests. What this means for an end-user is that a malicious extension can inject a code and send an HTTP request on behalf of the inject web pages.<br />
+<img class="center" src="/images/browser-extension-threat-modeling/browser-extension-architecture.png" alt="Browser-Extension Architecture" width="300"/> </p>
+
+<p>Back to the figure, an extension can interact with a browser&rsquo;s and system&rsquo;s APIs in the case of granted privileges, obtaining almost the same rights as a browser. An extension works in Execution environment [6] also known as an isolated world where say inject JS code work within its environment and doesn&rsquo;t conflict with a websites JS functions. As a part of the security model, in order to an extension has access to resources it defines its desired permissions in a manifest.json file, which looks like following:</p>
+
+<pre><code>{ ...
+    &quot;permissions&quot;: [
+    &quot;tabs&quot; 
+ ]
+}
+</code></pre>
+
+<p>In Figure 2, we can see how above permission syntax shows up for a user. It may not be obvious from the dialog box what exactly Read your browsing history means for a user and this is why many users think of it as an extension will be able to read my browsing history as it claims. The catch is that this permission alone allows a developer to:<br />
+─ Full access to DOM elements of a webpage <br />
+─ Inject executable JS code into a webpage <br />
+─ Insert CSS code into a webpage <br />
+<img class="center" src="/images/browser-extension-threat-modeling/extension-permission.png" alt="Chrome Extension Permission" width="300"/> </p>
+
+<p>These are only three of the permissions that have been given based on <tabs> privileges. Content Scripts is another system where a developer may want to always inject a JavaScript code into every page opened by a user. To achieve this content_scripts field utilized in manifest.json as following:</p>
+
+<pre><code>&quot;content_scripts&quot;: [ 
+    {
+    &quot;matches&quot;: [&quot;http://www.example.com/*&quot;],
+    &quot;js&quot;: [&quot;jquery.js&quot;, &quot;myscript.js&quot;] 
+    }
+]
+</code></pre>
+
+<p>As you can see permission system opens a wide range of attack opportunities for an intruder. These rich features are potential tools for an attacker to manipulate a system. I will talk more about this in the Thread Model section.
+Once an extension has been installed it plays a role as a &ldquo;bridge&rdquo; between a user and a website. Figure 3 demonstrates this concept, this feature mostly used by ad blockers since they try to filter out included JavaScript codes from the DOM, therefore before showing webpage to the user it has to go through the extension to achieve the desired result. <br />
+<img class="center" src="/images/browser-extension-threat-modeling/extension-interaction.png" alt="User Access" width="500"/> <br />
+Unfortunately, this is also a shiny opportunity for the malware companies to inject ad-
+vertisement into the page without user&rsquo;s consent.</p>
+
+<h2 id="threat-models">Threat Models</h2>
+
+<p>In the threat model, we are going to model an extension that takes advantage of the features available for a developer. We also assume that malicious extension has already been installed. There are many ways to do so, such as installing it to the file system under the directory where extensions live via malicious software, legitimately publishing a malicious extension on Chrome Web Store by avoiding automatic malware analysis. Another common technique is to buy high ranked extensions from developers, this is a widespread method has been observed in very popular extension where advertisement companies contact to a developer and buy the extension then publishes it with ad injection code which as a result, injects ads to the active user’s browser activities. In order to demonstrate threats, we will design a number of malicious extension by utilizing APIs offered by the extensions.</p>
+
+<h3 id="data-leak">Data Leak</h3>
+
+<p>In the following model we simply ask for the following permission:</p>
+
+<pre><code>&quot;permissions&quot;: [ 
+    &quot;webRequest&quot;,
+    &quot;http://*/&quot; 
+]
+</code></pre>
+
+<p>and a user will see it as a form of <em>Read and change all your data on the websites you visit.</em> This is a common privilege in the extensions and almost all the time ignored and is not being taken seriously by users.
+This is the feature mostly misused for hijacking users&rsquo; credentials by collecting information. The malicious extension will fire an event whenever a user types something on “password” field and stops, at this stage, the extension will assume the password is being typed. Afterward, it will try to find &ldquo;username&rdquo; field in the DOM and get its value as well as URL of the website. At this point, the extension will successfully collect username, password, URL. Let&rsquo;s see how extension gets username and password in detail, a password field in the DOM is pretty straightforward since it has type=&ldquo;password&rdquo; and JavaScript selector can easily access it, however, the username is challenging since developers name username field differently. In order to overcome this challenge, we created following simple wordlist:</p>
+
+<pre><code>&quot;loginEmail&quot;, 
+&quot;username&quot;, 
+&quot;email&quot;, 
+&quot;loginName&quot;, 
+&quot;login&quot;, 
+&quot;id_username&quot;, 
+&quot;UserId&quot;,
+&quot;userid&quot;, 
+&quot;user_email&quot;,
+&quot;useremail&quot;, 
+&quot;userEmail&quot;, 
+&quot;login_email&quot;
+</code></pre>
+
+<p>Despite the fact that it is a short list, it is very effective. This list will be used as lookup table each time when a user signs in a webpage to get the username of the user.
+At this point, we can send the collected data to remote server. To meet our needs, I developed a simple RESTful API server to receive collected information. The extension automatically posts the collected sensitive information to the API and the server stores it in the local database. In Figure 4, we can observe stored data from the user&rsquo;s browser. <br />
+<img class="center" src="/images/browser-extension-threat-modeling/sample-data.png" alt="Collected sample data from a user" width="300"/> <br />
+As we can see, a simple common privilege access can lead a massive leak of sensitive data, this technique can be extended to collect other kind of personal information such as payment credentials (PayPal, credit card etc.), or identity stealing.</p>
+
+<h3 id="http-flood">HTTP FLOOD</h3>
+
+<p>Since our extension has a right to make an HTTP request, we can perform HTTP Flood [7] which is a type of DDoS attack where an injected machine will make GET or POST request to the target. We are going to modify above extension to model HTTP Flood. Firstly, we need a target where the requests will be sent. As we mentioned above, an extension receives an update from the web store. This is a practical way to use Command and Control technique to send a target address to the bot. This can be done as simple as creating a .txt file that contains information about target URL and interval. Here is the example of such a file:</p>
+
+<pre><code>URL = http://twitter.com/ 
+Interval = 1000
+</code></pre>
+
+<p>In order to tell injected machines that we want to attack to a certain address. We publish an updated .txt file on web store as a part of new version of the extension. Afterward, the browser takes care of distributing the file to the users. Once a command has been received from the server, in every opened tab the extension will perform HTTP Flood by making an HTTP request to the target with the indicated interval. This technique has been also utilized for mining cryptocurrencies as well [8].</p>
+
+<h2 id="countermeasures">Countermeasures</h2>
+
+<p>Under this header, we will discuss what kind of measurement we can take to ensure integrity, confidentiality, and privacy. As we observed above, the extension has a full access to DOM and right to modify it. This is achieved by simply asking for http://<em>/</em> permission. There is no clear indication for users to know that full access to DOM as well as cross-origin HTTP request has been granted.</p>
+
+<h3 id="in-detail-privileges">In detail privileges</h3>
+
+<p>As we saw so far, the permission system currently utilized by the browser is simple, meaning it covers a wide range of features, however, the only message a user sees is as simple as <em>Reading your browsing history or Read and change all your data on the websites you visit</em>, which are unclear for the end-user.
+One way to solve this is to expand the scope of the privileges presenting a new, more advanced privileges system. Let&rsquo;s look at this using the extension we demonstrated on the Threat Model section. In our case, the bad actor wants to access to:</p>
+
+<table>
+<thead>
+<tr>
+<th>Desired access</th>
+<th>Permitted under the permission</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>DOM</td>
+<td>http://*/</td>
+</tr>
+
+<tr>
+<td>Read sensitive field from the DOM</td>
+<td>http://*/</td>
+</tr>
+
+<tr>
+<td>Send cross origin requests</td>
+<td>http://*/</td>
+</tr>
+</tbody>
+</table>
+
+<p>These features allow the malicious actor to accomplished what illustrated.
+We introduce new permission keywords that need to be asked by the developers to have those accesses.</p>
+
+<table>
+<thead>
+<tr>
+<th>Desired access</th>
+<th>Permitted under the permission</th>
+<th>Access level</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>DOM</td>
+<td>dom_access</td>
+<td>read, write</td>
+</tr>
+
+<tr>
+<td>Read sensitive field from the DOM</td>
+<td>dom_sensitivity_access</td>
+<td>low, medium, high</td>
+</tr>
+
+<tr>
+<td>Send cross origin requests</td>
+<td>same_origin / cross_origin</td>
+<td>allow</td>
+</tr>
+</tbody>
+</table>
+
+<p>In this table, we show newly introduced access privileges by allowed access values. These relatively in detail permission system, will allow us to show a user clear message what exactly has been accessed by the malicious actor. The implementation of the new permission is straightforward and can be easily indicated manifest.json file as current permission system. In order to keep it simple and compact, we will use a hierarchical tree as shown:</p>
+
+<pre><code>&quot;permissions&quot;: [ 
+    {
+    &quot;dom_access&quot;: [ 
+        &quot;read&quot;,
+        &quot;write&quot; 
+    ],
+    &quot;dom_sensitivity_access&quot;: [ 
+        &quot;high&quot;
+    ], 
+    &quot;same_origin&quot;: [
+    &quot;allow&quot; 
+    ],
+    &quot;cross_origin&quot;: [ 
+        &quot;allow&quot;
+    ] 
+},
+]
+</code></pre>
+
+<p>The _dom<em>access</em> reveals that we want to access to DOM to read and write. These allow us to show user following message before installing an extension:
+<em>Read and Write the websites you visit</em>
+The _dom_sensitivity<em>access</em> is an interesting property we can utilize to protect websites from malicious extensions as well as improve overall security on the web applications. The similar approach has been introduced in some research papers [9]. This permission only supported if the website implements it on its DOM. In our Thread Model, we accessed following HTML element from DOM to get the password:</p>
+
+<pre><code>&lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot;&gt;
+</code></pre>
+
+<p>By employing HTML5 data attributes [10], we define <em>data-sensitivity</em> and set the value one of the access level: low, medium, high. For personal information fields such a credit card, a password can be defined using <em>data-sensitivity = “high”</em> :</p>
+
+<pre><code>&lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; data-sensitivity = &quot;high&quot;&gt;
+</code></pre>
+
+<p>Once this implementation is applied the extension will only be able to access the ele- ments that have been allowed by the user. More precisely, _dom_sensitivity<em>access:</em> low will not able to get the value of password because of <em>data-sensitivity = &ldquo;high&rdquo;</em> attribute. A user can be notified before installing the extension as the following message:
+<em>Read, Write and access personal data (credit card, password etc.) on the websites you visit</em>
+The _same<em>origin</em> and _cross<em>origin</em> allows the system know access level of HTTP requests. In case the same_origin permission has allow status, it will let an extension to send only HTTP request originated from the same source. The same goes for cross_origin, the system will permit an extension to make unlimited cross-origin HTTP requests. The following message can be presented to the end-users before installation to reveal what they are about to install:<br />
+&gt; Send a request on behalf of you to remote services</p>
+
+<p>Going back to the the first table after introducing the new permission system the malicious system will have a hard time to trick a user to install the malicious extension since the following permission needs to be accessed by a user:</p>
+
+<table>
+<thead>
+<tr>
+<th>Desired access</th>
+<th>Message for a user</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>DOM</td>
+<td>Read and Write the websites you visit</td>
+</tr>
+
+<tr>
+<td>Read sensitive field from the DOM</td>
+<td>Read, Write and access personal data (credit card, pass- word etc.) on the websites you visit</td>
+</tr>
+
+<tr>
+<td>Send cross origin requests</td>
+<td>Send a request on behalf of you to remote services</td>
+</tr>
+</tbody>
+</table>
+
+<p>These messages introduces the better detail about an extension and conscious user will not allow such behavior in simple extensions such as a calculator, weather, translator etc.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Nowadays, the extensions are widely being used by users to increase browser experience. As the browser extensions are rapidly growing so the number of malicious extensions. In this report, we looked at how an extension works, what threats and risks it can bring such as identity and sensitive information stealing, making a user part of the bot-net network and performing DDoS attacks. We also went through what kind of counteracts can be taken to prevent these threats.</p>
+
+<p>References <br />
+1. Browser usage, <a href="http://gs.statcounter.com/">http://gs.statcounter.com/</a> <br />
+2. Adrienne Porter Felt, Elizabeth Ha, Serge Egelman, Ariel Haney, Erika Chin, David Wagner.: Android Permissions: User Attention, Comprehension, and Behavior, <a href="https://cups.cs.cmu.edu/soups/2012/proceedings/a3_Felt.pdf">https://cups.cs.cmu.edu/soups/2012/proceedings/a3_Felt.pdf</a> <br />
+3. Dan Goodin.: Google Chrome extensions with 500,000 downloads found to be malicious,
+<a href="https://arstechnica.com/information-technology/2018/01/500000-chrome-users-fall-prey-to-malicious-extensions-in-google-web-store/">https://arstechnica.com/information-technology/2018/01/500000-chrome-users-fall-prey-to-malicious-extensions-in-google-web-store/</a> <br />
+4. Jorge Villalobos: Extension review wait times are about to get much shorter,
+<a href="https://blog.mozilla.org/addons/2017/09/21/review-wait-times-get-shorter/">https://blog.mozilla.org/addons/2017/09/21/review-wait-times-get-shorter/</a> <br />
+5. Reddit Firefox: <a href="https://www.reddit.com/r/firefox/comments/737kze/min-ing_codes_been_discovered_in_two_reviewed/">https://www.reddit.com/r/firefox/comments/737kze/min-ing_codes_been_discovered_in_two_reviewed/</a> <br />
+6. Execution environment: <a href="https://developer.chrome.com/extensions/content_scripts#execu-tion-environment">https://developer.chrome.com/extensions/content_scripts#execu-tion-environment</a> <br />
+7. HTTP FLOOD: <a href="https://www.incapsula.com/ddos/attack-glossary/http-flood.html">https://www.incapsula.com/ddos/attack-glossary/http-flood.html</a> <br />
+8. Chrome extensions are mining cryptocurrency now: <a href="http://bgr.com/2017/12/29/mining-cryptocurrency-home-pc-chrome-extension/">http://bgr.com/2017/12/29/mining-cryptocurrency-home-pc-chrome-extension/</a> <br />
+9. Chrome Extensions: Threat Analysis and Countermeasures:
+<a href="http://dev1.www.isocdev.org/sites/default/files/11_4.pdf">http://dev1.www.isocdev.org/sites/default/files/11_4.pdf</a> <br />
+10. Using data attributes: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes</a></p>
+
+<style>
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1em;
+}
+th{
+    border:2px solid #000000;
+}
+
+td{
+    border:1px solid #000000;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+</style>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "onaralili" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+
+        </footer>
+       
+    </body>
+
+</html>
+

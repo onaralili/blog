@@ -22,7 +22,7 @@
 </style>
 
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://onaralili.com/css/main.css">
 
 
 
@@ -43,7 +43,7 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
-     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/JSON.min.js"></script> 
 
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -60,7 +60,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.31" />
+ <meta name="generator" content="Hugo 0.52" />
         
         
         
@@ -135,14 +135,18 @@
 
     
     
+        
+        
+            
+        
+    
     
 
     
     
 
-    
-    
-    <h4><a href="/posts/srp/">What is The Secure Remote Password (SRP) protocol?</a></h4>
+
+    <h4><a href="https://www.onaralili.com/posts/srp">What is The Secure Remote Password (SRP) protocol?</a></h4>
     <div>February 27, 2018</div>
     <br>
      <kbd class="item-tag">SRP</kbd>  <kbd class="item-tag">Secure Remote Password</kbd>  <kbd class="item-tag">key exchange</kbd>  <kbd class="item-tag">security</kbd>  <kbd class="item-tag">cryptography</kbd> 
@@ -166,7 +170,7 @@ a user to the server. After authentication, they exchange message via a key
 they agree upon using encryption algorithms such as AES.
 One of the main concern in network authentication methods is securely authenticating a user to server or service with minimal effort. Nowadays, many users use simple, short passwords for authentication which raises security concerns. The SRP solves traditional problems such as weak keys and doesn’t require certificate infrastructure and a user are free to not to store long-term keys. It considered easy to deploy and implement and secure than conventional challenge-response systems. The protocol is developed under the idea that users like to use passwords that are easy to use and remember. As time being, there are well-known attacks against network authentication protocols such as simple passive attacks, sniffing attacks. Many other protocols require a server to store a password p or some hashed version h(p) which is not considered safe since once the server gets compromised hashed password can be cracked using a dictionary attack. On the other hand, SRP offers total protection for both passive and active threats by using DH key exchange like method, therefore it is effected even with a weak password and can be integrated with working applications. It offers perfect forward secrecy, meaning even the server has been hacked, the attacker cannot obtain any information about past and future communication since in every transaction a new key is being derived. Let’s see how SRP provides this security:
 In order to for a user to authenticate to a server, it has to go through a setup. Firstly, the client selects a random salt s and computes its has x= H(s,p) and also verifier. The verifier as the name suggests is a password verifier and it is computed v= gX. When the server receives the password verifier and calculated hash it stores salt s and the verifier but not calculated the hash. The server store the information that came from the client by the index I.
-The important point here is that the salt s must be enforced by the server in order to prevent the identical passwords look the same. At this point, salt s is being shared between the client and the server then later uses this information to make sure that the password a user provides matches with the one server has and establish a session key. After sharing a session key K, they need to complete authentication and provide each other information that their keys are identical, one way to do it is following:
+The important point here is that the salt s must be enforced by the server in order to prevent the identical passwords look the same. At this point, salt s is being shared between the client and the server then later uses this information to make sure that the password a user provides matches with the one server has and establish a session key. After sharing a session key K, they need to complete authentication and provide each other information that their keys are identical, one way to do it is following:<br />
 1. Alice sends Bob: M1 = H[H(N) XOR H(g) | H(I) | s | A | B | Kalice].
 2. Bob verifies M1 and sends Alice: M2 = H(A | M1 | Kbob).
 3. Alice verifies M2.</p>
@@ -219,14 +223,15 @@ Both sides start exchanging Application Data.</p>
 
 <h2 id="the-srp-implementation-and-openssl">The SRP implementation and OpenSSL</h2>
 
-<p>In this section, we are going to play around OpenSSL SRP support. As we mentioned above discussion one of the important part of the SRP is verifier. First, we start creating the server verifier file running OpenSSL SRP. As we can see from the guide, -gn command is used to provide g and N values which are required for a verifier, just like <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">DH key exchange</a>. Given a large enough g and N and output file name (pwd.srpv), we run following command:
-<code>OpenSSL SRP -srpvfile pwd.srpv -add -gn 1536 onar</code>
-After this, the system asks us password twice, after entering and verifying the password the system generates the verifier. It is worth to mention that pwd.srpv has to exist in the file system. Now, we created the verifier and it is ready to load to the server. Using OpenSSL type <em>SRP_VBASE</em> to store and utilize the verifier.
-At this point, the server should be configurated to show the client side that it supports SRP cipher suits. We can check available ciphers by running
-`<code>openssl ciphers -v — grep SRP</code>
-In order to show the user available ciphers suits, we include suits in the Client Hello message. It goes without saying that username should also be included when the server response to the authentication request. Now, we can finally test implementation on the client side by requesting:</p>
+<p>In this section, we are going to play around OpenSSL SRP support. As we mentioned above discussion one of the important part of the SRP is verifier. First, we start creating the server verifier file running OpenSSL SRP. As we can see from the guide, -gn command is used to provide g and N values which are required for a verifier, just like <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">DH key exchange</a>. Given a large enough g and N and output file name (pwd.srpv), we run following command:</p>
 
-<pre><code>./ssl_client -v --SRP localhost:2432
+<pre><code class="language-OpenSSL">After this, the system asks us password twice, after entering and verifying the password the system generates the verifier. It is worth to mention that pwd.srpv has to exist in the file system. Now, we created the verifier and it is ready to load to the server. Using OpenSSL type *SRP_VBASE* to store and utilize the verifier.
+At this point, the server should be configurated to show the client side that it supports SRP cipher suits. We can check available ciphers by running 
+```openssl ciphers -v — grep SRP``
+In order to show the user available ciphers suits, we include suits in the Client Hello message. It goes without saying that username should also be included when the server response to the authentication request. Now, we can finally test implementation on the client side by requesting:
+</code></pre>
+
+<p>./ssl_client -v &ndash;SRP localhost:2432
 Cipher suites:
 SRP-DSS-AES-256-CBC-SHA
 SRP-RSA-AES-256-CBC-SHA
@@ -237,7 +242,7 @@ SRP-3DES-EDE-CBC-SHA
 SRP-DSS-AES-128-CBC-SHA
 SRP-RSA-AES-128-CBC-SHA
 SRP-AES-128-CBC-SHA
-</code></pre>
+```</p>
 </div>
 
     
@@ -250,7 +255,7 @@ SRP-AES-128-CBC-SHA
         <h4 class="page-header">Comments</h4>
 
         <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -279,7 +284,7 @@ SRP-AES-128-CBC-SHA
 
         </footer>
        
-    <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+    </body>
 
 </html>
 

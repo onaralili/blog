@@ -2,69 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Onar Alili</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://onaralili.com/posts/</link>
     <description>Recent content in Posts on Onar Alili</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://onaralili.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Browser Extensions Threat Modeling</title>
-      <link>http://localhost:1313/posts/browser-extension-threat-modeling/</link>
+      <link>https://onaralili.com/posts/browser-extension-threat-modeling/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/browser-extension-threat-modeling/</guid>
+      <guid>https://onaralili.com/posts/browser-extension-threat-modeling/</guid>
       <description>This is a report I wrote for one of courses while doing my master studies. Some parts are heavily influced by other realted studies. Please check References section
 Introduction Today, users surf the internet using browsers such as Google Chrome, Firefox, Safari, IE (Edge) etc., these are main browsers are being utilized by users. Statistically, 56.31% of the users use Chrome as their default browser [1]. Therefore, we will mostly focus on Chrome and discuss the way the company protects users from malicious threats from the extensions.</description>
     </item>
     
     <item>
       <title>CKAN - open-source platform for your datasets. Troubleshooting</title>
-      <link>http://localhost:1313/posts/ckan/</link>
+      <link>https://onaralili.com/posts/ckan/</link>
       <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/ckan/</guid>
+      <guid>https://onaralili.com/posts/ckan/</guid>
       <description>CMS for open data? CKAN is a free &amp;amp; open-source platform to publish and host datasets in your own server. It has great search integration using Solr, API, data visualization and many more features that makes open data discoverable. The full list of features can be found here. In order to install CKAN on your server, you have two options either from source (via GitHub repository) or from the package if you are using Ubuntu.</description>
     </item>
     
     <item>
       <title>How a chrome extension turned to the Dark Side</title>
-      <link>http://localhost:1313/posts/maliciousbrowserextension/</link>
+      <link>https://onaralili.com/posts/maliciousbrowserextension/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/maliciousbrowserextension/</guid>
+      <guid>https://onaralili.com/posts/maliciousbrowserextension/</guid>
       <description>This is a short story and malware analysis of a chrome extension that served people well then the developer sell it to the malicious advertisement company.
 Discovery As you may know, recently I have published an extension (yes! one more tab manager for the world) SplitUp! - Tab Manager. I was looking for a way to improve it and Chrome Web Store is a great place to see other extensions to get inspired for new ideas.</description>
     </item>
     
     <item>
       <title>What is The Secure Remote Password (SRP) protocol?</title>
-      <link>http://localhost:1313/posts/srp/</link>
+      <link>https://onaralili.com/posts/srp/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/srp/</guid>
+      <guid>https://onaralili.com/posts/srp/</guid>
       <description>I have decided to publish materials I wrote for my Computer and Network Security course. It could help someone out there, so why keep it on my hard drive. You can obviously get shorter and straightforward information from following Wikipedia page. https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol
 So, what is it? The Secure Remote Password (SRP) protocol is a great method for securing remote access to many applications. It has been developed by Thomas Wu at Stanford University to enable the secure authentication based on username and password.</description>
     </item>
     
     <item>
       <title>OOPSpam API multiple spam filter</title>
-      <link>http://localhost:1313/posts/oopspamfilter/</link>
+      <link>https://onaralili.com/posts/oopspamfilter/</link>
       <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/oopspamfilter/</guid>
+      <guid>https://onaralili.com/posts/oopspamfilter/</guid>
       <description>visit https://oopspam.com/ I was thinking about some ideas as a side-project. Well, I thought it would be nice to pass my project-based exams Mobile Applications and Cloud Computing, Human-Computer Interaction with the same idea. I came up with the idea of VirusTotal-like service but as a spam filter service. As a result, OOPSpam API came to light. After making a few research I found out there is actually well-developed solution like mine, however, the price seemed to be high.</description>
     </item>
     
     <item>
       <title>1st Place Winner of Barama HackDay</title>
-      <link>http://localhost:1313/posts/baramahackday/</link>
+      <link>https://onaralili.com/posts/baramahackday/</link>
       <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/baramahackday/</guid>
+      <guid>https://onaralili.com/posts/baramahackday/</guid>
       <description>A few weeks ago Azercell’s Barama Innovation Center announced 36 hours hackathon which took place on 10 March 2016. I as a team leader with my two teammates from work decided to team up and participate. 12 March was the first day of the competition, the topic of the hackathon was “Food Industry”. After 36 hours non-stop codding we came up with idea of data analyzing and statistics of food sector.</description>
     </item>
     
