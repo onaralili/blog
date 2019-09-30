@@ -1,7 +1,7 @@
 ---
 title: "CKAN - open-source platform for your datasets. Troubleshooting"
 date: 2018-07-22
-tags: ["ckan", "dataset", "open-source"]
+tags: ["ckan", "dataset", "open source"]
 draft: false
 repo: "https://www.onaralili.com/posts/ckan"
 ---

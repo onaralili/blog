@@ -1,7 +1,7 @@
 ---
 title: "Browser Extensions Threat Modeling"
 date: 2018-11-10
-tags: ["Threat Modeling", "browser", "browser-extension"]
+tags: ["Threat Modeling", "browser", "browser extension"]
 draft: false
 repo: "https://www.onaralili.com/posts/browser-extension-threat-modeling"
 ---
