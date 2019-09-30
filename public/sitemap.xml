@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://onaralili.com/projects/oopspam-antispam-api/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://onaralili.com/projects/splitup/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
   </url>
@@ -40,6 +45,12 @@
   <url>
     <loc>https://onaralili.com/posts/baramahackday/</loc>
     <lastmod>2016-03-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://onaralili.com/tags/anti-spam-api/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -115,7 +126,7 @@
   
   <url>
     <loc>https://onaralili.com/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -145,7 +156,7 @@
   
   <url>
     <loc>https://onaralili.com/projects/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -163,7 +174,7 @@
   
   <url>
     <loc>https://onaralili.com/tags/spam/</loc>
-    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -175,7 +186,7 @@
   
   <url>
     <loc>https://onaralili.com/tags/spam-filter/</loc>
-    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -205,7 +216,7 @@
   
   <url>
     <loc>https://onaralili.com/tags/</loc>
-    <lastmod>2016-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
