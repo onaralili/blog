@@ -16,16 +16,10 @@ main {
     max-width: 750px;
 }
 
-/*footer*/
-
-/* .copyright {
-    margin: 15px 0;
-} */
-
 /*home page*/
 
 .intro {
-    margin: 20vh 0;
+    /* margin: 20vh 0; */
     transform: translateY(22vh);
 }
 
