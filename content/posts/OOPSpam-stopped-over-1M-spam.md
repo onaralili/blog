@@ -14,7 +14,7 @@ The first version of OOPSpam was a collection of APIs that merged into one. Nowa
 
 After seeing so many different kinds of spam content, I relearned and abounded some lessons I got from my previous academic experience. In this article, I will lay out some thoughts about spam and their nature.
 
-![](/images/spam-charter.jpg)
+<center><img src="/images/spam-charter.jpg" alt=""/></center>
 
 ### It is a hard problem but …
 
