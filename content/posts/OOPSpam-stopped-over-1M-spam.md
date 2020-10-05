@@ -20,7 +20,7 @@ After seeing so many different kinds of spam content, I relearned and abounded s
 
 Just when you think you have a way to completely solve this problem, a new wave of spam campaign proves you otherwise. Many companies struggle to tackle this issue. The problem is that there are usually two types of spammers: manual (human) and bot. While a bot crawls the web and submits messages to millions of websites, manual spammers go to a website and submit their content.
 
-![a robot illustration](/images/robot-submit.png)
+<center><img src="/images/robot-submit.png" width="35%" alt="a robot illustration"/></center>
 
 I would still go ahead and claim that it is possible to reach a nearly perfect result with well-polished rules, Machine Learning models, content and IP analyses (that is how OOPSpam has 99% accuracy :) ). It is rather a strange problem. I can show a form submission that you would categorize it as spam but it is certainly not spam for someone. This brings us to my next point.
 
