@@ -1,13 +1,13 @@
 baseURL = "https://onaralili.com/"
 languageCode = "en-us"
-title = "Onar Alili"
+title = "Onar's thoughts"
 theme = "minimal"
 disqusShortname = "onaralili" # delete this to disable disqus comments
 googleAnalytics = "UA-33248471-1"
 
 [params]
     author = "Onar Alili"
-    description = "freelance software engineer"
+    description = "Anti-Abuse engineer"
     githubUsername = "onaralili"
     accent = "#5c7b1e"
     showBorder = true
@@ -15,7 +15,7 @@ googleAnalytics = "UA-33248471-1"
     font = "Raleway" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift","javascript","JSON"]
+    highlightLanguages = ["go", "java", "kotlin", "php", "swift","javascript","JSON"]
     enableEmoji =  true
 
 [[menu.main]]
