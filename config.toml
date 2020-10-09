@@ -1,6 +1,6 @@
 baseURL = "https://onaralili.com/"
 languageCode = "en-us"
-title = "Onar's thoughts"
+title = "Onar writes here"
 theme = "minimal"
 disqusShortname = "onaralili" # delete this to disable disqus comments
 googleAnalytics = "UA-33248471-1"
