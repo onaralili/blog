@@ -10,7 +10,7 @@ repo: "https://www.onaralili.com/posts/OOPSpam-stopped-over-1M-spam"
 
 [OOPSpam Anti-Spam API](https://www.oopspam.com) made its next milestone. It processed and filtered over 1 000 000 spam messages with %99 accuracy. This is big for me. When I launched the project's commercial version in 2019, I couldn’t imagine it will reach this point. In 2017, I was doing research in this area as part of my master’s degree in Italy. Studying and digging research papers from Semantic Scholar and Google Scholar.
 
-The first version of OOPSpam was a collection of APIs that merged into one. Nowadays, It is a standalone SaaS with powerful analysis capabilities.
+[The first version of OOPSpam](https://www.onaralili.com/posts/oopspamfilter/) was a collection of APIs that merged into one. Nowadays, It is a standalone SaaS with powerful analysis capabilities.
 
 After seeing so many different kinds of spam content, I relearned and abounded some lessons I got from my previous academic experience. In this article, I will lay out some thoughts about spam and their nature.
 
